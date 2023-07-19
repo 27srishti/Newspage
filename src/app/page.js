@@ -1,13 +1,15 @@
-import { Header } from "./Components/Header"
-import {Head} from "./Components/Head"
-import { Body } from "./Components/Body"
-import { Footer } from "./Components/Footer"
+import { Head } from "./Components/Head";
+import { Body } from "./Components/Body";
+import { Bottom } from "./Components/Bottom";
+import { Footer } from "./Components/Footer";
 export default function Home() {
-  return (
-    <hi>
-      <Head/>
-      <Body/>
-      <Footer/>
-    </hi>
-  )
+  return (  
+    <section>
+    
+      <Head />
+      <Body />
+      <Bottom />
+      <Footer />
+    </section>
+  );
 }

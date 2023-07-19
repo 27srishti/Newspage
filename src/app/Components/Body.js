@@ -2,7 +2,7 @@ import React from "react";
 
 export const Body = () => {
   return (
-    <div className="">
+    
       <section className="bg-white ">
         <div className="container px-6 py-10 mx-auto">
           <div className="lg:flex lg:-mx-6">
@@ -187,7 +187,9 @@ export const Body = () => {
             </div>
           </div>
         </div>
+
+
       </section>
-    </div>
+    
   );
 };
