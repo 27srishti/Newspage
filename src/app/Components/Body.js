@@ -3,7 +3,7 @@ import React from "react";
 export const Body = () => {
   return (
     
-      <section className="bg-white ">
+      <section className="bg-white overflow-x-hidden ">
         <div className="container px-6 py-10 mx-auto">
           <div className="lg:flex lg:-mx-6">
             <div className="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">

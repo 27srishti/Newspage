@@ -1,7 +1,7 @@
 import React from "react";
 export const Head = () => {
   return (
-    <div className="container mx-auto m-2">
+    <div className="container mx-auto m-2 overflow-x-hidden">
       <div className="flex flex-row flex-wrap md:-mx-2">
         <div className="w-full md:w-[69%] h-64 md:h-auto md:mb-4 mb-2 ">
           <a

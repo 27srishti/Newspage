@@ -4,7 +4,7 @@ import { Bottom } from "./Components/Bottom";
 import { Footer } from "./Components/Footer";
 export default function Home() {
   return (  
-    <section>
+    <section classname=" overflow-hidden " >
     
       <Head />
       <Body />

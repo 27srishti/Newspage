@@ -1,15 +1,48 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "../Images/Logo.png";
-import Icon from "../Images/icons.png"
+import Icon from "../Images/icons.png";
+// import Date from "../Components/Date"
 const links = ["services", "blog"];
+
 export const Nav = () => {
   return (
     <section>
-      {/* middle */}
+      {/****************************************************** Top **************************************** */}
+      <header className="bg-white  grid justify-evenly gap-10 hidden -my-1 shadow-lg h-10  md:flex">
+        <nav className="block md:visible  ">
+          {" "}
+          <ul className="flex items-center mr-4  lg:mr-6 xl:mr-8 ">
+            <li className=" bg-lime-600 px-1    py-1 text-sm text-white font-semibold rounded-b ">
+              {" "}
+              TRENDING NOW{" "}
+            </li>
+            <li className="font-normal m-2 text-xs">
+              Cybersecurity news weekly roundup July 10, 2023
+            </li>
+            <li className="w-5  flex">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios/50/right-squared--v1.png"
+                alt="right-squared--v1"
+              />
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios/50/left-squared--v1.png"
+                alt="left-squared--v1"
+              />
+            </li>
+            <li className="ml-5 text-xs text-gray-500 ">Sign in / Join</li>
+          </ul>
+        </nav>
+      </header>
 
-      <header className="bg-white grid justify-evenly shadow-lg h-24 hidden md:flex">
-        <nav className="hidden xl:contents">
+      {/******************************************** middle********************************************* */}
+
+      <header className="bg-white grid justify-evenly shadow-lg h-24 hidden  sm:visible md:flex">
+        <nav className="hidden  sm:visible xl:contents">
           <ul className="flex items-center mr-4 lg:mr-6 xl:mr-8">
             <li className="p-1">
               <a
@@ -76,20 +109,20 @@ export const Nav = () => {
                   />
                 </svg>
               </a>
-            </li><h1 className=" pl-5 text-base font-light "> Wednesday, july 19, 2023</h1>
+            </li>
+
+            <h1 className=" pl-5 text-base font-light  "> {/* <Date/> */}</h1>
           </ul>
-       
         </nav>
         <a
           href
           className=" flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8"
         >
-          <Image className src={Logo} alt="Logo" />
+          <Image className="" src={Logo} alt="Logo" />
         </a>
         <div className=" flex items-center px-4 lg:px-6 xl:px-6">
           {" "}
           <button className="bg-red-600 text grid grid-flow-col text-center  hover:bg-gray-700 text-white font-normal px-2 xl:px-3 md:mr-10 py-2 xl:py-1.5 rounded">
-           
             <Image
               width="20"
               height="20"
@@ -99,7 +132,7 @@ export const Nav = () => {
             />
             Store
           </button>
-          <a href className="mr-4 lg:mr-6 xl:mr-8">
+          <a href className="mr-4 text-green-700 lg:mr-6 xl:mr-8">
             <svg
               className="h-6 xl:h-6"
               aria-hidden="true"
