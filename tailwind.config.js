@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {fontFamily: {
-      sans: ['var(--font-poppins)']
+      poppins: ['var(--font-poppins)']
     },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -1,7 +1,7 @@
 import React from "react";
 export const Bottom = () => {
   return (
-    <section className="px-5 py-10 mx-auto overflow-x-hidden ">
+    <section className="px-5 py-10 mx-auto overflow-x-hidden font-poppins">
       <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-12">
         <div className="flex flex-col justify-between col-span-12 py-2 space-y-8 md:space-y-16 md:col-span-3">
           <div className="flex flex-col space-y-8 md:space-y-12">
@@ -10,7 +10,7 @@ export const Bottom = () => {
               <a
                 rel="noopener noreferrer"
                 href="#"
-                className="font-serif hover:underline"
+                className="font-poppins hover:underline"
               >
                 Homes Of The Future, With Mike Syiek Of NetworkTigers.
               </a>
@@ -73,7 +73,7 @@ export const Bottom = () => {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="font-serif hover:underline"
+                  className="font-poppins hover:underline"
                 >
                   Aenean ac tristique lorem, ut mollis dui.
                 </a>
@@ -99,7 +99,7 @@ export const Bottom = () => {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="font-serif hover:underline"
+                  className="font-poppins hover:underline"
                 >
                   Nulla consectetur efficitur.
                 </a>
@@ -125,7 +125,7 @@ export const Bottom = () => {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="font-serif hover:underline"
+                  className="font-poppins hover:underline"
                 >
                   Vitae semper augue purus tincidunt libero.
                 </a>
@@ -151,7 +151,7 @@ export const Bottom = () => {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="font-serif hover:underline"
+                  className="font-poppins hover:underline"
                 >
                   Suspendisse potenti.
                 </a>
@@ -196,7 +196,7 @@ export const Bottom = () => {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="font-serif hover:underline"
+                  className="font-poppins hover:underline"
                 >
                   Aenean ac tristique lorem, ut mollis dui.
                 </a>
@@ -222,7 +222,7 @@ export const Bottom = () => {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="font-serif hover:underline"
+                  className="font-poppins hover:underline"
                 >
                   Nulla consectetur efficitur.
                 </a>
@@ -248,7 +248,7 @@ export const Bottom = () => {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="font-serif hover:underline"
+                  className="font-poppins hover:underline"
                 >
                   Vitae semper augue purus tincidunt libero.
                 </a>
@@ -274,7 +274,7 @@ export const Bottom = () => {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="font-serif hover:underline"
+                  className="font-poppins hover:underline"
                 >
                   Suspendisse potenti.
                 </a>

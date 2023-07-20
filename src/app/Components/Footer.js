@@ -5,9 +5,9 @@ export const Footer = () => {
    
     <footer className= " bg-neutral-700  shadow md:px-10   text-center overflow-x-hidden">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-100  sm:text-center text-gray-100 hover:underline">
+          <span className="text-sm font-poppins text-gray-100  sm:text-center text-gray-100 hover:underline">
             © 2020 
-            <a href="https://news.networktigers.com/" className="hover:underline  px-1">
+            <a href="https://news.networktigers.com/" className="hover:underline font-poppins px-1">
               NetworkTigers, Inc.™
             </a>
             
