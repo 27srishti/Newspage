@@ -1,14 +1,14 @@
 import React from "react";
-import Logo1 from "../Images/Logo.png";
-import Image from "next/image";
-import EP1 from "../Images/FBI cybersecurity noteworthy wins and losses.jpg";
-import EP2 from "../Images/Ransomware attacks on schools are surging.jpg";
-import EP3 from "../Images/What are pig butchering scams.jpg";
-import EP4 from "../Images/Understanding Access Point options.jpg";
-import LN1 from "../Images/Maximizing ROI on network equipment.jpg";
-import LN2 from "../Images/Cybersecurity news weekly roundup July 17, 2023.jpg";
-import LN3 from "../Images/Understanding the role of switches in networking.jpg";
-import LN4 from "../Images/The importance of firewalls in securing your network.jpg";
+// import Logo1 from "../Images/Logo.png";
+// import img from "next/image";
+// import EP1 from "../Images/FBI cybersecurity noteworthy wins and losses.jpg";
+// import EP2 from "../Images/Ransomware attacks on schools are surging.jpg";
+// import EP3 from "../Images/What are pig butchering scams.jpg";
+// import EP4 from "../Images/Understanding Access Point options.jpg";
+// import LN1 from "../Images/Maximizing ROI on network equipment.jpg";
+// import LN2 from "../Images/Cybersecurity news weekly roundup July 17, 2023.jpg";
+// import LN3 from "../Images/Understanding the role of switches in networking.jpg";
+// import LN4 from "../Images/The importance of firewalls in securing your network.jpg";
 
 export const Bottom = () => {
   return (
@@ -57,7 +57,12 @@ export const Bottom = () => {
 
           <div className="grid grid-col w-full space-y-2">
             <a rel="noopener noreferrer" href="#" className="grid  w-full">
-              <Image className="w-80 my-5" src={Logo1} alt="Logo" />
+              
+              <img
+                className="w-80 my-5"
+                src="/images/Logo.png"
+                alt="Logo"
+              />
               <span className="text-[0.90rem]  text-gray-600 hover:text-blue-400">
                 NetworkTigers, Inc.
               </span>
@@ -154,9 +159,10 @@ export const Bottom = () => {
             <div className="flex px-1 py-4">
               <a>
                 {" "}
-                <Image
+                <img
+                 
                   className=" object-cover rounded w-20 h-20 mr-4"
-                  src={EP1}
+                  src="/images/FBI cybersecurity noteworthy wins and losses.jpg"
                   alt="EP1"
                 />
               </a>
@@ -174,9 +180,10 @@ export const Bottom = () => {
             </div>
             <div className="flex px-1 py-4">
               <a>
-                <Image
+                <img
+                 
                   className=" object-cover rounded w-20 h-20 mr-4"
-                  src={EP2}
+                  src="/images/Ransomware attacks on schools are surging.jpg"
                   alt="EP2"
                 />
               </a>
@@ -194,9 +201,10 @@ export const Bottom = () => {
             </div>
             <div className="flex px-1 py-4 ">
               <a>
-                <Image
+                <img
+                 
                   className=" object-cover rounded w-20 h-20 mr-4"
-                  src={EP3}
+                  src="/images/What are pig butchering scams.jpg"
                   alt="EP3"
                 />
               </a>
@@ -217,9 +225,10 @@ export const Bottom = () => {
             <div className="flex px-1 py-4">
               <a>
                 {" "}
-                <Image
+                <img
+                 
                   className=" object-cover rounded w-20 h-20 mr-4"
-                  src={EP4}
+                  src="/images/Understanding Access Point options.jpg"
                   alt="EP4"
                 />
               </a>
@@ -257,9 +266,10 @@ export const Bottom = () => {
           <div className="flex flex-col divide-y divide-gray-300">
             <div className="flex px-1 py-4">
               <a>
-                <Image
+                <img
+                 
                   className=" object-cover rounded w-20 h-20 mr-4"
-                  src={LN1}
+                  src="/images/Maximizing ROI on network equipment.jpg"
                   alt="LN1"
                 />
               </a>
@@ -277,9 +287,10 @@ export const Bottom = () => {
             </div>
             <div className="flex px-1 py-4">
               <a>
-                <Image
+                <img
+                 
                   className=" object-cover rounded w-20 h-20 mr-4"
-                  src={LN2}
+                  src="/images/Cybersecurity news weekly roundup July 17, 2023.jpg"
                   alt="LN2"
                 />
               </a>
@@ -299,9 +310,10 @@ export const Bottom = () => {
             </div>
             <div className="flex px-1 py-4 ">
               <a>
-                <Image
+                <img
+                 
                   className=" object-cover rounded w-20 h-20 mr-4"
-                  src={LN3}
+                  src="/images/Understanding the role of switches in networking.jpg"
                   alt="LN3"
                 />
               </a>
@@ -321,9 +333,10 @@ export const Bottom = () => {
             </div>
             <div className="flex px-1 py-4">
               <a>
-                <Image
+                <img
+                 
                   className=" object-cover rounded w-20 h-20 mr-4"
-                  src={LN4}
+                  src="/images/The importance of firewalls in securing your network.jpg"
                   alt="LN4"
                 />
               </a>

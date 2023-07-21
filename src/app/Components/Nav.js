@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../Images/Logo.png";
-import Icon from "../Images/icons.png";
+// import Logo from "../Images/Logo.png";
+// import Icon from "../Images/icons.png";
 // import Date from "../Components/Date"
 const links = ["services", "blog"];
 
@@ -118,16 +118,18 @@ export const Nav = () => {
           href
           className=" flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8"
         >
-          <Image className="" src={Logo} alt="Logo" />
+          <img
+         
+           className="" src='images/Logo.png' alt="Logo" />
         </a>
         <div className=" flex items-center px-4 lg:px-6 xl:px-6">
           {" "}
           <button className="bg-red-600 text grid grid-flow-col text-center  hover:bg-gray-700 text-white font-normal px-2 xl:px-3 md:mr-10 py-2 xl:py-1.5 rounded">
-            <Image
+            <img
               width="20"
               height="20"
               className="mr-1.5 pt-1  "
-              src={Icon}
+              src="images/icons.png"
               alt="shopping-cart"
             />
             Store
