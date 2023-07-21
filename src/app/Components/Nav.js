@@ -72,7 +72,7 @@ export const Nav = () => {
                 className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
               >
                 <svg
-                  className="h-4"
+                  className="h-4 w-4"
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fab"
@@ -94,7 +94,7 @@ export const Nav = () => {
                 className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
               >
                 <svg
-                  className="h-4"
+                  className="h-4 w-4"
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fab"
