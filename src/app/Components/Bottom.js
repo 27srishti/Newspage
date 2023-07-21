@@ -22,7 +22,7 @@ export const Bottom = () => {
                 <div className="relative flex items-center  mb-3 text-gray-600 font-medium hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
                   <div className="relative ">
                     <div className="absolute bottom-0 text-center inline-block w-36 md:w-24 xl:w-36 px-4 py-2   text-white bg-red-700 rounded">
-                      <span className="inline-block text-sm text-center lg md:text-xs leading-tight">
+                      <span className="inline-block text-sm text-center  md:text-xs xl:text-sm leading-tight">
                         Featured Article
                       </span>
                       <span
@@ -140,7 +140,7 @@ export const Bottom = () => {
           <div className="relative flex items-center  mb-3 text-gray-600 hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
             <div className="relative ">
               <div className="absolute bottom-0 text-center inline-block w-36 md:w-24 xl:w-36 px-4 py-2 font-medium   text-white bg-neutral-500 rounded">
-                <span className="inline-block text-sm text-center leading-tight">
+                <span className="inline-block text-sm  text-center leading-tight">
                   Editor Picks
                 </span>
                 <span
@@ -152,79 +152,88 @@ export const Bottom = () => {
           </div>
           <div className="flex flex-col divide-y divide-gray-300">
             <div className="flex px-1 py-4">
-              <Image
-                className=" object-cover rounded w-20 h-20 mr-4"
-                src={EP1}
-                alt="EP1"
-              />
+              <a>
+                {" "}
+                <Image
+                  className=" object-cover rounded w-20 h-20 mr-4"
+                  src={EP1}
+                  alt="EP1"
+                />
+              </a>
 
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
-                  href="#"
+                  href="https://news.networktigers.com/opinion/fbi-cybersecurity-noteworthy-wins-and-losses/"
                   className="font-poppins hover:underline"
                 >
-                  Maximizing ROI on network equipment
+                  FBI cybersecurity noteworthy wins and losses
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">
-                  July 20, 2023
-                </p>
+                <p className="mt-auto text-xs  . text-gray-400">May 13, 2023</p>
               </div>
             </div>
             <div className="flex px-1 py-4">
-              <Image
-                className=" object-cover rounded w-20 h-20 mr-4"
-                src={EP2}
-                alt="EP2"
-              />
+              <a>
+                <Image
+                  className=" object-cover rounded w-20 h-20 mr-4"
+                  src={EP2}
+                  alt="EP2"
+                />
+              </a>
+
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
-                  href="#"
+                  href="https://news.networktigers.com/opinion/ransomware-attacks-on-schools-are-surging/"
                   className="font-poppins hover:underline"
                 >
-                  Cybersecurity news weekly roundup
+                  Ransomware attacks on schools are surging
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">
-                  July 17, 2023
-                </p>
+                <p className="mt-auto text-xs  . text-gray-400">May 4, 2023</p>
               </div>
             </div>
             <div className="flex px-1 py-4 ">
-              <Image
-                className=" object-cover rounded w-20 h-20 mr-4"
-                src={EP3}
-                alt="EP3"
-              />
+              <a>
+                <Image
+                  className=" object-cover rounded w-20 h-20 mr-4"
+                  src={EP3}
+                  alt="EP3"
+                />
+              </a>
+
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
-                  href="#"
+                  href="https://news.networktigers.com/opinion/what-are-pig-butchering-scams/"
                   className="font-poppins hover:underline"
                 >
-                  Understanding the role of switches in networking
+                  What are pig butchering scams?
                 </a>
                 <p className="mt-auto text-xs  . text-gray-400">
-                  July 15, 2023
+                  April 29, 2023
                 </p>
               </div>
             </div>
             <div className="flex px-1 py-4">
-              <Image
-                className=" object-cover rounded w-20 h-20 mr-4"
-                src={EP4}
-                alt="EP4"
-              />
+              <a>
+                {" "}
+                <Image
+                  className=" object-cover rounded w-20 h-20 mr-4"
+                  src={EP4}
+                  alt="EP4"
+                />
+              </a>
+
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
-                  href="#"
+                  href="https://news.networktigers.com/opinion/understanding-access-point-options-mimo-vs-mu-mimo/"
                   className="font-poppins hover:underline"
                 >
-                  The importance of firewalls in securing your network
+                  Understanding Access Point options: MIMO vs. MU-MIMO
                 </a>
                 <p className="mt-auto text-xs  . text-gray-400">
-                  July 13, 2023
+                  April 20, 2023
                 </p>
               </div>
             </div>
@@ -247,74 +256,88 @@ export const Bottom = () => {
           </div>
           <div className="flex flex-col divide-y divide-gray-300">
             <div className="flex px-1 py-4">
-              <Image
-                className=" object-cover rounded w-20 h-20 mr-4"
-                src={LN1}
-                alt="LN1"
-              />
+              <a>
+                <Image
+                  className=" object-cover rounded w-20 h-20 mr-4"
+                  src={LN1}
+                  alt="LN1"
+                />
+              </a>
+
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
                   href="https://news.networktigers.com/industry-news/maximizing-roi-on-network-equipment/"
                   className="font-poppins hover:underline"
                 >
-                  FBI cybersecurity noteworthy wins and losses
+                  Maximizing ROI on network equipment
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">May 13, 2023</p>
+                <p className="mt-auto text-xs text-gray-400">July 20, 2023</p>
               </div>
             </div>
             <div className="flex px-1 py-4">
-              <Image
-                className=" object-cover rounded w-20 h-20 mr-4"
-                src={LN2}
-                alt="LN2"
-              />
+              <a>
+                <Image
+                  className=" object-cover rounded w-20 h-20 mr-4"
+                  src={LN2}
+                  alt="LN2"
+                />
+              </a>
+
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
                   href="https://news.networktigers.com/cybersecurity-news/roundup-july-17-2023/"
                   className="font-poppins hover:underline"
                 >
-                  Ransomware attacks on schools are surging
+                  Cybersecurity news weekly roundup July 17, 2023
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">May 4, 2023</p>
+                <p className="mt-auto text-xs  . text-gray-400">
+                  July 17, 2023
+                </p>
               </div>
             </div>
             <div className="flex px-1 py-4 ">
-              <Image
-                className=" object-cover rounded w-20 h-20 mr-4"
-                src={LN3}
-                alt="LN3"
-              />
+              <a>
+                <Image
+                  className=" object-cover rounded w-20 h-20 mr-4"
+                  src={LN3}
+                  alt="LN3"
+                />
+              </a>
+
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
                   href="https://news.networktigers.com/industry-news/role-of-switches-in-networking/"
                   className="font-poppins hover:underline"
                 >
-                  What are pig butchering scams?
+                  Understanding the role of switches in networking
                 </a>
                 <p className="mt-auto text-xs  . text-gray-400">
-                  April 29, 2023
+                  July 15, 2023
                 </p>
               </div>
             </div>
             <div className="flex px-1 py-4">
-              <Image
-                className=" object-cover rounded w-20 h-20 mr-4"
-                src={LN4}
-                alt="LN4"
-              />
+              <a>
+                <Image
+                  className=" object-cover rounded w-20 h-20 mr-4"
+                  src={LN4}
+                  alt="LN4"
+                />
+              </a>
+
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
                   href="https://news.networktigers.com/industry-news/importance-of-firewalls/"
                   className="font-poppins hover:underline"
                 >
-                  Understanding Access Point options: MIMO vs. MU-MIMO
+                  The importance of firewalls in securing your network
                 </a>
                 <p className="mt-auto text-xs  . text-gray-400">
-                  April 20, 2023
+                  July 13, 2023
                 </p>
               </div>
             </div>
