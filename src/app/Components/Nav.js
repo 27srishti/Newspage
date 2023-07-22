@@ -126,8 +126,7 @@ export const Nav = () => {
           {" "}
           <button className="bg-red-600 text grid grid-flow-col text-center  hover:bg-gray-700 text-white font-normal px-2 xl:px-3 md:mr-10 py-2 xl:py-1.5 rounded">
             <img
-              width="20"
-              height="20"
+             
               className="mr-1.5 pt-1  "
               src="images/icons.png"
               alt="shopping-cart"

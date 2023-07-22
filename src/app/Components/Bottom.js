@@ -1,27 +1,17 @@
 import React from "react";
-// import Logo1 from "../Images/Logo.png";
-// import img from "next/image";
-// import EP1 from "../Images/FBI cybersecurity noteworthy wins and losses.jpg";
-// import EP2 from "../Images/Ransomware attacks on schools are surging.jpg";
-// import EP3 from "../Images/What are pig butchering scams.jpg";
-// import EP4 from "../Images/Understanding Access Point options.jpg";
-// import LN1 from "../Images/Maximizing ROI on network equipment.jpg";
-// import LN2 from "../Images/Cybersecurity news weekly roundup July 17, 2023.jpg";
-// import LN3 from "../Images/Understanding the role of switches in networking.jpg";
-// import LN4 from "../Images/The importance of firewalls in securing your network.jpg";
 
 export const Bottom = () => {
   return (
-    <section className="px-5 py-10 mx-auto overflow-x-hidden font-poppins bg-gray-100">
+    <section className="px-10 py-10 mx-auto overflow-x-hidden font-poppins bg-gray-100">
       <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-12">
         {/* ----------------------------1st column ----------------------------------------- */}
-        <div className="flex flex-col justify-evenly xl:col-span-3 md:col-span-3 col-span-12 py-2 space-y-8  ">
+        <div className="flex flex-col justify-evenly xl:col-span-3 md:col-span-4 col-span-12 py-2 space-y-8  ">
           <div className="flex flex-col space-y-10 md:space-y-2">
             <div className="flex flex-col  md:w-auto md:space-y-1 space-y-5">
               <div className=" pt-8 ">
                 <div className="relative flex items-center  mb-3 text-gray-600 font-medium hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
                   <div className="relative ">
-                    <div className="absolute bottom-0 text-center inline-block w-36 md:w-24 xl:w-36 px-4 py-2   text-white bg-red-700 rounded">
+                    <div className="absolute bottom-0 text-center inline-block w-36  xl:w-36 px-4 py-2   text-white bg-red-700 rounded">
                       <span className="inline-block text-sm text-center  md:text-xs xl:text-sm leading-tight">
                         Featured Article
                       </span>
@@ -57,12 +47,7 @@ export const Bottom = () => {
 
           <div className="grid grid-col w-full space-y-2">
             <a rel="noopener noreferrer" href="#" className="grid  w-full">
-              
-              <img
-                className="w-80 my-5"
-                src="/images/Logo.png"
-                alt="Logo"
-              />
+              <img className="w-80 my-5" src="/images/Logo.png" alt="Logo" />
               <span className="text-[0.90rem]  text-gray-600 hover:text-blue-400">
                 NetworkTigers, Inc.
               </span>
@@ -141,10 +126,10 @@ export const Bottom = () => {
           </div>
         </div>
         {/* ----------------------------2nd column ----------------------------------------- */}
-        <div className="hidden pt-10 xl:col-span-3  md:col-span-5 md:block lg:block">
+        <div className="hidden pt-10 xl:col-span-3 md:col-span-4 md:block lg:block">
           <div className="relative flex items-center  mb-3 text-gray-600 hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
             <div className="relative ">
-              <div className="absolute bottom-0 text-center inline-block w-36 md:w-24 xl:w-36 px-4 py-2 font-medium   text-white bg-neutral-500 rounded">
+              <div className="absolute bottom-0 text-center inline-block w-36  xl:w-36 px-4 py-2 font-medium   text-white bg-neutral-500 rounded">
                 <span className="inline-block text-sm  text-center leading-tight">
                   Editor Picks
                 </span>
@@ -156,12 +141,11 @@ export const Bottom = () => {
             </div>
           </div>
           <div className="flex flex-col divide-y divide-gray-300">
-            <div className="flex px-1 py-4">
-              <a>
+            <div className="flex py-4 space-x-2">
+              <a className="">
                 {" "}
                 <img
-                 
-                  className=" object-cover rounded w-20 h-20 mr-4"
+                  className=" md:hidden lg:block object-cover rounded w-26 h-16 "
                   src="/images/FBI cybersecurity noteworthy wins and losses.jpg"
                   alt="EP1"
                 />
@@ -171,18 +155,17 @@ export const Bottom = () => {
                 <a
                   rel="noopener noreferrer"
                   href="https://news.networktigers.com/opinion/fbi-cybersecurity-noteworthy-wins-and-losses/"
-                  className="font-poppins hover:underline"
+                  className="font-poppins   hover:underline"
                 >
                   FBI cybersecurity noteworthy wins and losses
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">May 13, 2023</p>
+                <p className="mt-auto text-xs  text-gray-400">May 13, 2023</p>
               </div>
             </div>
-            <div className="flex px-1 py-4">
+            <div className="flex py-4 space-x-2">
               <a>
                 <img
-                 
-                  className=" object-cover rounded w-20 h-20 mr-4"
+                  className=" md:hidden lg:block object-cover rounded w-26 h-16"
                   src="/images/Ransomware attacks on schools are surging.jpg"
                   alt="EP2"
                 />
@@ -196,14 +179,13 @@ export const Bottom = () => {
                 >
                   Ransomware attacks on schools are surging
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">May 4, 2023</p>
+                <p className="mt-auto text-xs  text-gray-400">May 4, 2023</p>
               </div>
             </div>
-            <div className="flex px-1 py-4 ">
+            <div className="flex py-4 space-x-2">
               <a>
                 <img
-                 
-                  className=" object-cover rounded w-20 h-20 mr-4"
+                  className=" md:hidden lg:block object-cover rounded w-[4.5rem] xl:w-20 h-16 "
                   src="/images/What are pig butchering scams.jpg"
                   alt="EP3"
                 />
@@ -217,17 +199,14 @@ export const Bottom = () => {
                 >
                   What are pig butchering scams?
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">
-                  April 29, 2023
-                </p>
+                <p className="mt-auto text-xs  text-gray-400">April 29, 2023</p>
               </div>
             </div>
-            <div className="flex px-1 py-4">
+            <div className="flex py-4 space-x-2">
               <a>
                 {" "}
                 <img
-                 
-                  className=" object-cover rounded w-20 h-20 mr-4"
+                  className=" md:hidden lg:block object-cover rounded w-26 h-16"
                   src="/images/Understanding Access Point options.jpg"
                   alt="EP4"
                 />
@@ -237,7 +216,7 @@ export const Bottom = () => {
                 <a
                   rel="noopener noreferrer"
                   href="https://news.networktigers.com/opinion/understanding-access-point-options-mimo-vs-mu-mimo/"
-                  className="font-poppins hover:underline"
+                  className="font-poppins  hover:underline"
                 >
                   Understanding Access Point options: MIMO vs. MU-MIMO
                 </a>
@@ -252,7 +231,7 @@ export const Bottom = () => {
         <div className="hidden pt-10 xl:col-span-3 md:col-span-4 md:block lg:block">
           <div className="relative flex items-center  mb-3 text-gray-600 hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
             <div className="relative ">
-              <div className="absolute bottom-0 text-center inline-block w-36 md:w-24 xl:w-36 px-4 py-2   text-white font-medium bg-yellow-500 rounded">
+              <div className="absolute bottom-0 text-center inline-block w-36  xl:w-36 px-4 py-2   text-white font-medium bg-yellow-500 rounded">
                 <span className="inline-block text-sm text-center leading-tight">
                   Latest News
                 </span>
@@ -264,11 +243,10 @@ export const Bottom = () => {
             </div>
           </div>
           <div className="flex flex-col divide-y divide-gray-300">
-            <div className="flex px-1 py-4">
+            <div className="flex py-4 space-x-2">
               <a>
                 <img
-                 
-                  className=" object-cover rounded w-20 h-20 mr-4"
+                  className=" md:hidden lg:block object-cover rounded w-26 h-16"
                   src="/images/Maximizing ROI on network equipment.jpg"
                   alt="LN1"
                 />
@@ -285,11 +263,10 @@ export const Bottom = () => {
                 <p className="mt-auto text-xs text-gray-400">July 20, 2023</p>
               </div>
             </div>
-            <div className="flex px-1 py-4">
+            <div className="flex py-4 space-x-2">
               <a>
                 <img
-                 
-                  className=" object-cover rounded w-20 h-20 mr-4"
+                  className=" md:hidden lg:block object-cover rounded w-26 h-16"
                   src="/images/Cybersecurity news weekly roundup July 17, 2023.jpg"
                   alt="LN2"
                 />
@@ -303,16 +280,15 @@ export const Bottom = () => {
                 >
                   Cybersecurity news weekly roundup July 17, 2023
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">
+                <p className="mt-auto text-xs text-gray-400">
                   July 17, 2023
                 </p>
               </div>
             </div>
-            <div className="flex px-1 py-4 ">
+            <div className="flex py-4 space-x-2">
               <a>
                 <img
-                 
-                  className=" object-cover rounded w-20 h-20 mr-4"
+                  className=" md:hidden lg:block object-cover rounded w-32 h-16"
                   src="/images/Understanding the role of switches in networking.jpg"
                   alt="LN3"
                 />
@@ -331,11 +307,10 @@ export const Bottom = () => {
                 </p>
               </div>
             </div>
-            <div className="flex px-1 py-4">
+            <div className="flex py-4 space-x-2">
               <a>
                 <img
-                 
-                  className=" object-cover rounded w-20 h-20 mr-4"
+                  className=" md:hidden lg:block object-cover rounded w-36 h-16"
                   src="/images/The importance of firewalls in securing your network.jpg"
                   alt="LN4"
                 />
@@ -349,7 +324,7 @@ export const Bottom = () => {
                 >
                   The importance of firewalls in securing your network
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">
+                <p className="mt-auto text-xs text-gray-400">
                   July 13, 2023
                 </p>
               </div>
