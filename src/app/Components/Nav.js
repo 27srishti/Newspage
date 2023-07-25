@@ -9,15 +9,15 @@ export const Nav = () => {
   return (
     <section>
       {/****************************************************** Top **************************************** */}
-      <header className="bg-white  grid justify-evenly gap-10 hidden -my-1 shadow-lg h-10  md:flex">
-        <nav className="block md:visible  ">
+      <header className="bg-white mx-10  gap-10 hidden -my-1 shadow-lg h-10  md:flex">
+        <nav className="block md:visible w-screen ">
           {" "}
-          <ul className="flex items-center mr-4  lg:mr-6 xl:mr-8 ">
+          <ul className="flex items-center  flex justify-between  ">
             <li className=" bg-lime-600 px-1    py-1 text-sm text-white font-semibold rounded-b ">
               {" "}
               TRENDING NOW{" "}
             </li>
-            <li className="font-normal m-2 text-xs">
+            <li className="font-normal text-center w-[50%] m-2 text-xs">
               Cybersecurity news weekly roundup July 10, 2023
             </li>
             <li className="w-5  flex">
@@ -34,16 +34,16 @@ export const Nav = () => {
                 alt="left-squared--v1"
               />
             </li>
-            <li className="ml-5 text-xs text-gray-500 ">Sign in / Join</li>
+            <li className="text-xs  text-gray-500 ">Sign in / Join</li>
           </ul>
         </nav>
       </header>
 
       {/******************************************** middle********************************************* */}
 
-      <header className="bg-white grid justify-evenly shadow-lg h-24 hidden  sm:visible md:flex">
+      <header className="bg-white px-10 grid justify-between   hidden  sm:visible md:flex">
         <nav className="hidden  sm:visible xl:contents">
-          <ul className="flex items-center mr-4 lg:mr-6 xl:mr-8">
+          <ul className="flex items-center ">
             <li className="p-1">
               <a
                 href
@@ -69,7 +69,7 @@ export const Nav = () => {
             <li className="p-1">
               <a
                 href
-                className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
+                className="inline-block rounded-full border  hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
               >
                 <svg
                   className="h-4 w-4"
@@ -111,7 +111,7 @@ export const Nav = () => {
               </a>
             </li>
 
-            <h1 className=" pl-5 text-base font-light  "> {/* <Date/> */}</h1>
+            <h1 className="  text-base font-light  "> {/* <Date/> */}</h1>
           </ul>
         </nav>
         <a
@@ -122,7 +122,7 @@ export const Nav = () => {
          
            className="" src='images/Logo.png' alt="Logo" />
         </a>
-        <div className=" flex items-center px-4 lg:px-6 xl:px-6">
+        <div className=" flex items-center ">
           {" "}
           <button className="bg-red-600 text grid grid-flow-col text-center  hover:bg-gray-700 text-white font-normal px-2 xl:px-3 md:mr-10 py-2 xl:py-1.5 rounded">
             <img
@@ -133,7 +133,8 @@ export const Nav = () => {
             />
             Store
           </button>
-          <a href className="mr-4 text-green-700 lg:mr-6 xl:mr-8">
+          <a href className=" text-lime-500 flex ">
+            <div className="px-2 font-semibold">Search</div>
             <svg
               className="h-6 xl:h-6"
               aria-hidden="true"

@@ -48,7 +48,7 @@ export const Head = () => {
                     href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/"
                     className="  text-gray-100 font-bold text-sm md:text-xl  capitalize"
                   >
-                    Cybersecurity news weekly roundup July 24, 2023
+                    Cybersecurity news weekly roundup 
                   </a>
                   <div className="flex pb-3  ">
                     <div className="text-[0.75rem] text-white text-left py-1.5 font-medium">
