@@ -2,7 +2,7 @@ import React from "react";
 
 export const Bottom = () => {
   return (
-    <section className="px-10 py-10 mx-auto overflow-x-hidden font-poppins bg-gray-100">
+    <section className="px-5 md:px-10 py-10 mx-auto overflow-x-hidden font-poppins bg-gray-100">
       <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-12">
         {/* ----------------------------1st column ----------------------------------------- */}
         <div className="flex flex-col justify-evenly xl:col-span-3 md:col-span-4 col-span-12 py-2 space-y-8  ">

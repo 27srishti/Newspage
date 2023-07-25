@@ -1,8 +1,8 @@
 import React from "react";
 export const Body = () => {
   return (
-    <section className="bg-white overflow-x-hidden mx-0 md:mx-10 cursor-pointer ">
-      <div className="container  py-10 mx-auto">
+    <section className="bg-white overflow-x-hidden  md:px-10  cursor-pointer ">
+      <div className="container py-5 mx-auto">
         <div className="lg:flex  ">
           <div className="block lg:flex md:px-2 lg:p-0 mt-10 mb-10">
             {/* post cards */}
@@ -184,7 +184,7 @@ export const Body = () => {
                   </div>
                 </div>
               </div>{" "}
-              <div className="flex mt-3">
+              <div className="flex mt-3 mx-5 md:mx-0">
                 <a
                   href=""
                   className=" px-1 py-2 w-24 md:px-2 md:py-4 md:w-40 text-sm md:text-base  text-center rounded text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
@@ -197,7 +197,7 @@ export const Body = () => {
             {/* ***********************************right sidebar ************************************************* */}
           </div>
 
-          <div className="mt-8 xl:w-2/4 lg:mt-0 ">
+          <div className="mt-8 xl:w-2/4 lg:mt-0 px-5 md:px-0 ">
             <div className=" bg-lime-600 w-32 px-2 font-bold py-1.5 text-center text-sm text-white">
               Whats Popular ?
             </div>
