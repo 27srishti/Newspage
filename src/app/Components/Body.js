@@ -197,8 +197,8 @@ export const Body = () => {
             {/* ***********************************right sidebar ************************************************* */}
           </div>
 
-          <div className="mt-8 xl:w-2/4 lg:mt-0 px-5 md:px-0 ">
-            <div className=" bg-lime-600 w-32 px-2 font-bold py-1.5 text-center text-sm text-white">
+          <div className="mt-8 xl:w-2/4 lg:mt-0 px-2 ">
+            <div className=" bg-lime-600 w-40 px-2 font-bold py-1.5 text-center text-sm text-white">
               Whats Popular ?
             </div>
             <hr className=" mb-3 border-[0.15rem] border-lime-600" />

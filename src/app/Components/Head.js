@@ -1,7 +1,8 @@
 import React from "react";
 export const Head = () => {
   return (
-    <div className="container mx-auto m-2 overflow-x-hidden mt-10">
+    <div className="container mx-auto  overflow-x-hidden mt-6">
+     
       <div className="flex flex-row flex-wrap ">
         <div className="w-full   md:w-[69%] h-64 md:h-auto md:mb-4 mb-2 ">
           <a className="relative ">
@@ -12,7 +13,7 @@ export const Head = () => {
             />
             <div className="bg-black opacity-30 w-full h-full  absolute bottom-0 px-5"></div>
             <div className=" absolute bottom-1 px-5 ">
-              <div className="bg-neutral-600 w-28 mb-2 hover:bg-yellow-300  hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
+              <div className="bg-neutral-600 w-32 mb-2 hover:bg-yellow-300  hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
                 Opinion & Analysis
               </div>
               <a
@@ -41,7 +42,7 @@ export const Head = () => {
                   alt="H1"
                 /><div className="bg-black opacity-50 w-full h-full  absolute bottom-0 px-5"></div>
                 <div className=" absolute bottom-1 px-5 ">
-                  <div className="bg-neutral-600 w-28 mb-2 hover:bg-yellow-300 hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
+                  <div className="bg-neutral-600 w-32 mb-2 hover:bg-yellow-300 hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
                     Opinion & Analysis
                   </div>
                   <a
@@ -68,7 +69,7 @@ export const Head = () => {
                   alt="H1"
                 /><div className="bg-black opacity-50 w-full h-full  absolute bottom-0 px-5"></div>
                 <div className=" absolute bottom-1 px-5 ">
-                  <div className="bg-neutral-600 w-28 mb-2 hover:bg-yellow-300 hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
+                  <div className="bg-neutral-600 w-32 mb-2 hover:bg-yellow-300 hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
                     Opinion & Analysis
                   </div>
                   <a
