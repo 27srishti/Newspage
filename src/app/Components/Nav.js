@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const links = [
   "Industry News",
@@ -13,7 +13,50 @@ const links = [
   "About Us",
 ];
 
+const sentences = [
+  "Cybersecurity news weekly roundup July 10, 2023",
+  "The importance of firewalls in securing your network",
+  "Cybersecurity news weekly roundup July 24, 2023",
+  "Choosing the right firewall solution",
+  "Cybersecurity news weekly roundup July 24, 2023",
+];
 export const Nav = () => {
+  const [currentText, setCurrentText] = useState(0);
+  const [isAutoChanging, setIsAutoChanging] = useState(true);
+
+  const goToPreviousSentence = () => {
+    setCurrentText((prevIndex) =>
+      prevIndex === 0 ? sentences.length - 1 : prevIndex - 1
+    );
+    setIsAutoChanging(false);
+  };
+
+  const goToNextSentence = () => {
+    setCurrentText((prevIndex) =>
+      prevIndex === sentences.length - 1 ? 0 : prevIndex + 1
+    );
+    setIsAutoChanging(false);
+  };
+
+  useEffect(() => {
+    let interval;
+    if (isAutoChanging) {
+      interval = setInterval(goToNextSentence, 1000);
+    }
+
+    return () => clearInterval(interval);
+  }, [isAutoChanging]);
+
+  useEffect(() => {
+    if (!isAutoChanging) {
+      const timeout = setTimeout(() => {
+        setIsAutoChanging(true);
+      }, 5000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [currentText, isAutoChanging]);
+
   const [menuOpen, setMenuOpen] = useState(true);
 
   const mobNav = () => {
@@ -26,33 +69,46 @@ export const Nav = () => {
         <nav className="block md:visible w-screen ">
           {" "}
           <ul className="flex items-center justify-between  ">
-            <div className="flex h-1/4">
-              <li className=" bg-lime-600 px-1  py-1 text-sm text-white font-semibold rounded-b ">
+            <div className="flex items-center ">
+              <li className=" bg-lime-600 px-2  py-1 text-sm text-white font-medium rounded-b ">
                 {" "}
                 TRENDING NOW{" "}
               </li>
-              <a className="font-normal  mx-5 m-2 text-xs">
-                Cybersecurity news weekly roundup July 10, 2023
-              </a>
+              <div className=" font-[200]  mx-5 m-2 text-sm">
+                <div
+                  className={`transition-transform ease-out duration-100 ${
+                    isAutoChanging
+                      ? "translate-x-40 opacity-0"
+                      : "-translate-x-0 opacity-100"
+                  }`}
+                >
+                  {" "}
+                  {sentences[currentText]}
+                </div>{" "}
+              </div>
             </div>
             <li className=" opacity-50  cursor-pointer  flex">
-              <div className="w-5 h-5  hover:bg-lime-600">
+              <button className="w-5 h-5  hover:bg-lime-600">
                 <img
+                  onClick={goToPreviousSentence}
                   className=""
                   width="50"
                   height="50"
                   src="https://img.icons8.com/ios/50/right-squared--v1.png"
                   alt="right-squared--v1"
                 />
-              </div>
-              <div className="w-5 h-5 hover:bg-lime-600">
+              </button>
+              <button
+                onClick={goToNextSentence}
+                className="w-5 h-5 hover:bg-lime-600"
+              >
                 <img
                   width="50"
                   height="50"
                   src="https://img.icons8.com/ios/50/left-squared--v1.png"
                   alt="left-squared--v1"
                 />
-              </div>
+              </button>
             </li>
             <li className="text-xs hover:text-lime-600 cursor-pointer text-gray-500 ">
               Sign in / Join
@@ -67,7 +123,7 @@ export const Nav = () => {
         <ul className="flex items-center ">
           <li className="px-1">
             <a
-              href
+              href="https://twitter.com/networktigers"
               className="inline-block rounded-full  p-2  hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
             >
               <svg
@@ -89,7 +145,7 @@ export const Nav = () => {
           </li>
           <li className="px-1">
             <a
-              href
+              href="https://www.facebook.com/networktigers/"
               className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
             >
               <svg
@@ -111,7 +167,7 @@ export const Nav = () => {
           </li>
           <li className="p-1 mr-3">
             <a
-              href
+              href="https://www.linkedin.com/company/networktigers/"
               className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
             >
               <svg
@@ -131,7 +187,7 @@ export const Nav = () => {
               </svg>
             </a>
           </li>
-          <h2 className=" md:hidden lg:flex item-center text-xs  font-light  ">
+          <h2 className=" md:hidden lg:flex item-center text-xs font-extralight  ">
             {" "}
             Wednesday, July 26, 2023 {/* <Date/> */}
           </h2>
@@ -145,14 +201,17 @@ export const Nav = () => {
         </a>{" "}
         <div className=" flex items-center ">
           {" "}
-          <button className="bg-red-600 text grid grid-flow-col text-center mx-5 md:text-sm hover:bg-gray-700 items-center text-white font-normal md:px-2 xl:px-3  md:py-1 xl:py-1 rounded">
+          <a
+            href="https://www.networktigers.com/"
+            className="bg-red-600 text grid grid-flow-col text-center mx-5 md:text-sm hover:bg-gray-700 items-center text-white font-normal md:px-2 xl:px-3  md:py-1 xl:py-1 rounded"
+          >
             <img
               className="mr-1 pt-1 w-5  "
               src="images/icons.png"
               alt="shopping-cart"
             />
             Store
-          </button>{" "}
+          </a>{" "}
           <a href className=" text-lime-500 flex  cursor-pointer">
             <div className="px-2 text-base font-medium">Search</div>
             <svg
@@ -233,7 +292,7 @@ export const Nav = () => {
           className={
             menuOpen
               ? "relative z-50 hidden"
-              : "fixed duration-500 md:invisible z-50 top-0 left-0 bottom-0 flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+              : "fixed transition duration-500  md:invisible z-50 top-0 left-0 bottom-0 flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
           }
         >
           <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" />
