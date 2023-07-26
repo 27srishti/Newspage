@@ -233,7 +233,7 @@ export const Nav = () => {
           className={
             menuOpen
               ? "relative z-50 hidden"
-              : "fixed md:invisible z-50 top-0 left-0 bottom-0 flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+              : "fixed duration-500 md:invisible z-50 top-0 left-0 bottom-0 flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
           }
         >
           <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" />
