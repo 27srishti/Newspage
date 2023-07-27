@@ -12,6 +12,10 @@ const ItemCard = ({
   date,
   readMore,
 }) => {
+  const links = [
+    { url: readMore, text: 'Read More' },
+    // Add more link objects if needed
+  ];
   return (
     <div className="w-full">
       <a
@@ -43,12 +47,15 @@ const ItemCard = ({
             <p className="text-gray-500 w-[90%] text-base">{description}</p>
           </div>
           <div className="flex mt-3" aria-label="readmore">
+          {links.map((link) => (
             <a
-              href={readMore}
+              key={link.url}
+              href={link.url}
               className="px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 text-sm md:text-base text-center rounded text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
             >
-              Read More
+              {link.text}
             </a>
+            ))}
           </div>
         </div>
       </a>

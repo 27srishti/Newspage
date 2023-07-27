@@ -4,7 +4,7 @@ export const Head = () => {
     <div className="container mx-auto  overflow-x-hidden mt-6">
       <div className="flex flex-row flex-wrap ">
         <div className="w-full   md:w-[69%] h-64 md:h-auto md:mb-4 mb-2 ">
-          <a className="relative ">
+          <a href="/" className="relative ">
             <img
               className="block w-full h-full md:h-full lg:h-[80%] xl:h-[84.5%] 2xl:h-[70.5%]  bg-no-repeat bg-center bg-cover "
               src="/images/Head 1.avif"
@@ -34,7 +34,7 @@ export const Head = () => {
         <div className="w-full  md:w-[31%] md:mb-4 md:px-2">
           <div className="flex  flex-row md:flex-col  md:-mx-2">
             <div className="w-full pr-2 md:w-full h-48 xl:h-64   md:mb-2 md:px-2">
-              <a className="relative">
+              <a href="/" className="relative">
                 <img
                 href="/"
                   className="block w-full h-full  bg-no-repeat bg-center bg-cover "
@@ -62,7 +62,7 @@ export const Head = () => {
               </a>
             </div>
             <div className="w-full   md:w-full h-48 xl:h-64  md:px-2">
-              <a className="relative">
+              <a href="/" className="relative">
                 <img
                   className="block w-full h-full  bg-no-repeat bg-center bg-cover "
                   src="/images/Maximizing ROI on network equipment.avif"
