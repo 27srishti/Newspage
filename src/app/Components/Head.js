@@ -9,6 +9,7 @@ export const Head = () => {
               className="block w-full h-full md:h-full lg:h-[80%] xl:h-[84.5%] 2xl:h-[70.5%]  bg-no-repeat bg-center bg-cover "
               src="/images/Head 1.avif"
               alt="H1"
+              href="/"
             />
             <div className="bg-black opacity-30 w-full h-full  absolute bottom-0 px-5"></div>
             <div className=" absolute bottom-1 px-5 ">
@@ -32,9 +33,10 @@ export const Head = () => {
         </div>
         <div className="w-full  md:w-[31%] md:mb-4 md:px-2">
           <div className="flex  flex-row md:flex-col  md:-mx-2">
-            <div className="w-full w-1/2 pr-2 md:w-full h-48 xl:h-64 md:mb-2  md:mb-2 md:px-2">
+            <div className="w-full pr-2 md:w-full h-48 xl:h-64   md:mb-2 md:px-2">
               <a className="relative">
                 <img
+                href="/"
                   className="block w-full h-full  bg-no-repeat bg-center bg-cover "
                   src="/images/Body-3.avif"
                   alt="H1"
@@ -59,12 +61,13 @@ export const Head = () => {
                 </div>
               </a>
             </div>
-            <div className="w-full w-1/2  md:w-full h-48 xl:h-64  md:px-2">
+            <div className="w-full   md:w-full h-48 xl:h-64  md:px-2">
               <a className="relative">
                 <img
                   className="block w-full h-full  bg-no-repeat bg-center bg-cover "
                   src="/images/Maximizing ROI on network equipment.avif"
                   alt="H1"
+                  href="/"
                 />
                 <div className="bg-black opacity-50 w-full h-full  absolute bottom-0 px-5"></div>
                 <div className=" absolute bottom-1 px-5 ">

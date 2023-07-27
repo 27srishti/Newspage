@@ -1,16 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const links = [
-  "Industry News",
-  "Network News",
-  "Cybersecurity News",
-  "Remote Work",
-  "NetworkTigers News",
-  "Opinion & Analysis",
-  "Authors",
-  "Newsletter",
-  "About Us",
+const linksWithUrls = [
+  { name: "Industry News", url: "https://news.networktigers.com/category/industry-news/" },
+    { name: "Network News", url: "https://news.networktigers.com/category/network-news/" },
+    { name: "Cybersecurity News", url: "https://news.networktigers.com/category/cybersecurity-news/" },
+    { name: "Remote Work", url: "https://news.networktigers.com/category/remote-work/" },
+    { name: "NetworkTigers News", url: "https://news.networktigers.com/category/networktigers-news/" },
+    { name: "Opinion & Analysis", url: "https://news.networktigers.com/category/opinion/" },
+    { name: "Authors", url: "https://news.networktigers.com/authors/" },
+    { name: "Newsletter", url: "https://news.networktigers.com/newsletter/" },
+    { name: "About Us", url: "https://news.networktigers.com/about-us/" },
 ];
 
 const sentences = [
@@ -195,7 +195,7 @@ export const Nav = () => {
             Wednesday, July 26, 2023 {/* <Date/> */}
           </h2>
         </ul>
-        <a href className=" flex-shrink-0 flex items-center   ">
+        <a href="https://news.networktigers.com/" className=" flex-shrink-0 flex items-center   ">
           <img
             className="md:w-80  lg:w-96 2xl:w-full"
             src="images/Logo.avif"
@@ -215,7 +215,7 @@ export const Nav = () => {
             />
             Store
           </a>{" "}
-          <a href className=" text-lime-500 flex  cursor-pointer">
+          <a href="https://news.networktigers.com/" className=" text-lime-500 flex  cursor-pointer">
             <div className="px-2 text-base font-medium">Search</div>
             <svg
               className="h-6 xl:h-6"
@@ -279,16 +279,16 @@ export const Nav = () => {
             </a>
           </div>
           <ul className="hidden  text-center absolute justify-center top-1/2  left-1/2 transform -translate-y-1/2 -translate-x-1/2 md:flex lg:mx-auto  md:items-center md:w-full md:space-x-4  xl:space-x-8">
-            {links.map((link) => (
-              <li key={link}>
-                <a
-                  href=""
-                  className="text-xs  lg:text-sm font-semibold  text-black hover:text-lime-500"
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
+          {linksWithUrls.map((linkObj) => (
+          <li key={linkObj.name}>
+            <a
+              href={linkObj.url} // Use the URL from the object
+              className="text-xs lg:text-sm font-semibold text-black hover:text-lime-500"
+            >
+              {linkObj.name} {/* Use the link name from the object */}
+            </a>
+          </li>
+        ))}
           </ul>
         </nav>
         <div
@@ -327,17 +327,19 @@ export const Nav = () => {
             </div>
             <div>
               <ul>
-                {links.map((link) => (
-                  <li key={link} className="mb-1">
+              {linksWithUrls.map((linkObj) => (
+                  <li key={linkObj.name} className="mb-1">
                     <a
+                    href={linkObj.url} // Use the URL from the object
                       className="block p-4 text-sm font-semibold text-gray-400 hover:bg-lime-50 hover:text-lime-600 rounded"
-                      href="#"
+                      
                     >
-                      {link}
+                       {linkObj.name} {/* Use the link name from the object */}
                     </a>
                   </li>
                 ))}
               </ul>
+            
             </div>
           </nav>
         </div>

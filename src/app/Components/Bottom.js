@@ -145,12 +145,13 @@ export const Bottom = () => {
           </div>
           <div className="flex flex-col divide-y divide-gray-300">
             <div className="flex py-4 space-x-2">
-              <a className="">
+              <a  href="/" >
                 {" "}
                 <img
                   className=" md:hidden lg:block object-cover rounded w-26 h-16 "
                   src="/images/FBI cybersecurity noteworthy wins and losses.avif"
                   alt="EP1"
+                  href="/"
                 />
               </a>
 
@@ -166,11 +167,12 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a>
+              <a  href="/">
                 <img
                   className=" md:hidden lg:block object-cover rounded w-26 h-16"
                   src="/images/Ransomware attacks on schools are surging.avif"
                   alt="EP2"
+                  href="/"
                 />
               </a>
 
@@ -186,11 +188,12 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a>
+              <a  href="/">
                 <img
                   className=" md:hidden lg:block object-cover rounded w-[4.5rem] xl:w-20 h-16 "
                   src="/images/What are pig butchering scams.avif"
                   alt="EP3"
+                  href="/"
                 />
               </a>
 
@@ -206,12 +209,13 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a>
+              <a  href="/">
                 {" "}
                 <img
                   className=" md:hidden lg:block object-cover rounded w-26 h-16"
                   src="/images/Understanding Access Point options.avif"
                   alt="EP4"
+                  href="/"
                 />
               </a>
 
@@ -220,6 +224,7 @@ export const Bottom = () => {
                   rel="noopener noreferrer"
                   href="https://news.networktigers.com/opinion/understanding-access-point-options-mimo-vs-mu-mimo/"
                   className="font-poppins  hover:underline"
+                  
                 >
                   Understanding Access Point options: MIMO vs. MU-MIMO
                 </a>
@@ -247,7 +252,7 @@ export const Bottom = () => {
           </div>
           <div className="flex flex-col divide-y divide-gray-300">
             <div className="flex py-4 space-x-2">
-              <a>
+              <a  href="/">
                 <img
                   className=" md:hidden lg:block object-cover rounded w-26 h-16"
                   src="/images/Maximizing ROI on network equipment.avif"
@@ -267,7 +272,7 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a>
+              <a  href="/">
                 <img
                   className=" md:hidden lg:block object-cover rounded w-26 h-16"
                   src="/images/Cybersecurity news weekly roundup July 17, 2023.avif"
@@ -289,7 +294,7 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a>
+              <a  href="/">
                 <img
                   className=" md:hidden lg:block object-cover rounded w-32 h-16"
                   src="/images/Understanding the role of switches in networking.avif"
@@ -311,7 +316,7 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a>
+              <a  href="/">
                 <img
                   className=" md:hidden lg:block object-cover rounded w-36 h-16"
                   src="/images/The importance of firewalls in securing your network.avif"
