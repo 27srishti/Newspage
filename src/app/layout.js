@@ -1,6 +1,7 @@
+// @client
 import "./globals.css";
 import { Poppins } from "@next/font/google";
-import { Nav } from "../app/Components/Nav";
+import { Nav } from "./Components/Nav";
 const poppins = Poppins({
   subsets: ['latin'],
   weight:['400','700'],
