@@ -47,7 +47,7 @@ export const Bottom = () => {
 
           <div className="grid grid-col w-full space-y-2">
             <a rel="noopener noreferrer" href="#" className="grid  w-full">
-              <img className="w-80 my-5" src="/images/Logo.png" alt="Logo" />
+              <img className="w-80 my-5" src="/images/Logo.avif" alt="Logo" />
               <span className="text-[0.90rem]  text-gray-600 hover:text-blue-400">
                 NetworkTigers, Inc.
               </span>
@@ -146,7 +146,7 @@ export const Bottom = () => {
                 {" "}
                 <img
                   className=" md:hidden lg:block object-cover rounded w-26 h-16 "
-                  src="/images/FBI cybersecurity noteworthy wins and losses.jpg"
+                  src="/images/FBI cybersecurity noteworthy wins and losses.avif"
                   alt="EP1"
                 />
               </a>
@@ -166,7 +166,7 @@ export const Bottom = () => {
               <a>
                 <img
                   className=" md:hidden lg:block object-cover rounded w-26 h-16"
-                  src="/images/Ransomware attacks on schools are surging.jpg"
+                  src="/images/Ransomware attacks on schools are surging.avif"
                   alt="EP2"
                 />
               </a>
@@ -186,7 +186,7 @@ export const Bottom = () => {
               <a>
                 <img
                   className=" md:hidden lg:block object-cover rounded w-[4.5rem] xl:w-20 h-16 "
-                  src="/images/What are pig butchering scams.jpg"
+                  src="/images/What are pig butchering scams.avif"
                   alt="EP3"
                 />
               </a>
@@ -207,7 +207,7 @@ export const Bottom = () => {
                 {" "}
                 <img
                   className=" md:hidden lg:block object-cover rounded w-26 h-16"
-                  src="/images/Understanding Access Point options.jpg"
+                  src="/images/Understanding Access Point options.avif"
                   alt="EP4"
                 />
               </a>
@@ -247,7 +247,7 @@ export const Bottom = () => {
               <a>
                 <img
                   className=" md:hidden lg:block object-cover rounded w-26 h-16"
-                  src="/images/Maximizing ROI on network equipment.jpg"
+                  src="/images/Maximizing ROI on network equipment.avif"
                   alt="LN1"
                 />
               </a>
@@ -267,7 +267,7 @@ export const Bottom = () => {
               <a>
                 <img
                   className=" md:hidden lg:block object-cover rounded w-26 h-16"
-                  src="/images/Cybersecurity news weekly roundup July 17, 2023.jpg"
+                  src="/images/Cybersecurity news weekly roundup July 17, 2023.avif"
                   alt="LN2"
                 />
               </a>
@@ -289,7 +289,7 @@ export const Bottom = () => {
               <a>
                 <img
                   className=" md:hidden lg:block object-cover rounded w-32 h-16"
-                  src="/images/Understanding the role of switches in networking.jpg"
+                  src="/images/Understanding the role of switches in networking.avif"
                   alt="LN3"
                 />
               </a>
@@ -311,7 +311,7 @@ export const Bottom = () => {
               <a>
                 <img
                   className=" md:hidden lg:block object-cover rounded w-36 h-16"
-                  src="/images/The importance of firewalls in securing your network.jpg"
+                  src="/images/The importance of firewalls in securing your network.avif"
                   alt="LN4"
                 />
               </a>

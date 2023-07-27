@@ -6,7 +6,7 @@ const items = [
   {
     title: "Maximizing ROI on network equipment",
     readMore: "https://news.networktigers.com/industry-news/maximizing-roi-on-network-equipment/",
-    imageUrl: "images/Maximizing ROI on network equipment.jpg",
+    imageUrl: "images/Body-4.avif",
     category: "Industry News",
     name: "Derek Walborn",
     date: "July 20, 2023",
@@ -16,7 +16,7 @@ const items = [
   {
     title: "Cybersecurity news weekly roundup July 17, 2023",
     readMore: "https://news.networktigers.com/cybersecurity-news/roundup-july-17-2023/",
-    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.jpg",
+    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn ",
     date: "uly 17, 2023",
@@ -25,7 +25,7 @@ const items = [
   {
     title: "Understanding the role of switches in networking",
     readMore: "https://news.networktigers.com/industry-news/role-of-switches-in-networking/",
-    imageUrl: "/images/Understanding the role of switches in networking.jpg",
+    imageUrl: "/images/Understanding the role of switches in networking.avif",
     category: "Industry News",
     name: "Gabrielle West",
     date: "July 15, 2023",
@@ -34,7 +34,7 @@ const items = [
   {
     title: "The importance of firewalls in securing your network",
     readMore: "https://news.networktigers.com/industry-news/importance-of-firewalls/",
-    imageUrl: "/images/The importance of firewalls in securing your network.jpg",
+    imageUrl: "/images/The importance of firewalls in securing your network.avif",
     category: "Industry News",
     name: "Derek Walborn ",
     date: "July 13, 2023",
@@ -43,7 +43,7 @@ const items = [
   {
     title: "Cybersecurity news weekly roundup July 10, 2023",
     readMore: "https://news.networktigers.com/networktigers-news/roundup-july-10-2023/",
-    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.jpg",
+    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn",
     date: " July 10, 2023",
@@ -53,7 +53,7 @@ const items = [
   {
     title: "Maximizing ROI on network equipment",
     readMore: "https://news.networktigers.com/industry-news/maximizing-roi-on-network-equipment/",
-    imageUrl: "images/Maximizing ROI on network equipment.jpg",
+    imageUrl: "images/Maximizing ROI on network equipment.avif",
     category: "Industry News",
     name: "Derek Walborn",
     date: "July 20, 2023",
@@ -63,7 +63,7 @@ const items = [
   {
     title: "Cybersecurity news weekly roundup July 17, 2023",
     readMore: "https://news.networktigers.com/cybersecurity-news/roundup-july-17-2023/",
-    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.jpg",
+    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn ",
     date: "uly 17, 2023",
@@ -72,7 +72,7 @@ const items = [
   {
     title: "Understanding the role of switches in networking",
     readMore: "https://news.networktigers.com/industry-news/role-of-switches-in-networking/",
-    imageUrl: "/images/Understanding the role of switches in networking.jpg",
+    imageUrl: "/images/Understanding the role of switches in networking.avif",
     category: "Industry News",
     name: "Gabrielle West",
     date: "July 15, 2023",
@@ -81,7 +81,7 @@ const items = [
   {
     title: "The importance of firewalls in securing your network",
     readMore: "https://news.networktigers.com/industry-news/importance-of-firewalls/",
-    imageUrl: "/images/The importance of firewalls in securing your network.jpg",
+    imageUrl: "/images/The importance of firewalls in securing your network.avif",
     category: "Industry News",
     name: "Derek Walborn ",
     date: "July 13, 2023",
@@ -90,7 +90,7 @@ const items = [
   {
     title: "Cybersecurity news weekly roundup July 10, 2023",
     readMore: "https://news.networktigers.com/networktigers-news/roundup-july-10-2023/",
-    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.jpg",
+    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn",
     date: " July 10, 2023",

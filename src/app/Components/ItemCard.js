@@ -1,7 +1,6 @@
 // components/ItemCard.js
 // @client
 "use client";
-
 const ItemCard = ({
   title,
   imageUrl,
@@ -48,6 +47,7 @@ const ItemCard = ({
             >
               Read More
             </a>
+            
           </div>
         </div>
       </a>

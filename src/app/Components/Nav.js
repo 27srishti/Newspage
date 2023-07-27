@@ -195,7 +195,7 @@ export const Nav = () => {
         <a href className=" flex-shrink-0 flex items-center   ">
           <img
             className="md:w-80  lg:w-96 2xl:w-full"
-            src="images/Logo.png"
+            src="images/Logo.avif"
             alt="Logo"
           />
         </a>{" "}
@@ -207,7 +207,7 @@ export const Nav = () => {
           >
             <img
               className="mr-1 pt-1 w-5  "
-              src="images/icons.png"
+              src="images/icons.avif"
               alt="shopping-cart"
             />
             Store
@@ -253,7 +253,7 @@ export const Nav = () => {
             <a className="">
               <img
                 className="block   h-5  bg-no-repeat bg-center bg-cover "
-                src="/images/Logo.png"
+                src="/images/Logo.avif"
                 alt="H1"
               />
             </a>
@@ -301,7 +301,7 @@ export const Nav = () => {
               <a className="mr-auto text-3xl font-bold leading-none" href="#">
                 <img
                   className="block   h-5  bg-no-repeat bg-center bg-cover "
-                  src="/images/Logo.png"
+                  src="/images/Logo.avif"
                   alt="H1"
                 />
               </a>

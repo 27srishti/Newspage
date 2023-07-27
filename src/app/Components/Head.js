@@ -8,7 +8,7 @@ export const Head = () => {
           <a className="relative ">
             <img
               className="block w-full h-full md:h-full lg:h-[80%] xl:h-[84.5%] 2xl:h-[70.5%]  bg-no-repeat bg-center bg-cover "
-              src="/images/Head 1.jpg"
+              src="/images/Head 1.avif"
               alt="H1"
             />
             <div className="bg-black opacity-30 w-full h-full  absolute bottom-0 px-5"></div>
@@ -38,7 +38,7 @@ export const Head = () => {
                 
                 <img
                   className="block w-full h-full  bg-no-repeat bg-center bg-cover "
-                  src="/images/Head 2.jpg"
+                  src="/images/Head 2.avif"
                   alt="H1"
                 /><div className="bg-black opacity-50 w-full h-full  absolute bottom-0 px-5"></div>
                 <div className=" absolute bottom-1 px-5 ">
@@ -65,7 +65,7 @@ export const Head = () => {
                 
                 <img
                   className="block w-full h-full  bg-no-repeat bg-center bg-cover "
-                  src="/images/Maximizing ROI on network equipment.jpg"
+                  src="/images/Maximizing ROI on network equipment.avif"
                   alt="H1"
                 /><div className="bg-black opacity-50 w-full h-full  absolute bottom-0 px-5"></div>
                 <div className=" absolute bottom-1 px-5 ">
