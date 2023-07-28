@@ -1,6 +1,7 @@
 // @client
 import React from "react";
 import LoadMoreItems from "../Components/loadMoreItems";
+import ItemCard from "../Components/ItemCard"; 
 
 const items = [
   {
@@ -107,7 +108,18 @@ export const Body = () => {
         <div className="lg:flex  ">
           <div className="block lg:flex md:px-2 lg:p-0 mt-10 mb-10">
             <div className="container mx-auto my-8 ">
-              <LoadMoreItems items={items} />
+            {items.map((item, index) => (
+                <ItemCard
+                  key={index}
+                  title={item.title}
+                  imageUrl={item.imageUrl}
+                  category={item.category}
+                  name={item.name}
+                  date={item.date}
+                  description={item.description}
+                  readMore={item.readMore}
+                />
+              ))}
             </div>
 
             {/* ***********************************right sidebar ************************************************* */}
