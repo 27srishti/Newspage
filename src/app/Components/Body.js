@@ -127,7 +127,7 @@ export const Body = () => {
           </div>
 
           <div className="mt-8 xl:w-2/4 lg:mt-0 px-5 ">
-            <div className=" bg-lime-600 w-40 px-2 font-bold py-1.5 text-center text-sm text-white">
+            <div className=" bg-lime-600 w-40 px-2 font-bold py-1.5 text-center text-sm text-black">
               Whats Popular ?
             </div>
             <hr className=" mb-3 border-[0.15rem] border-lime-600" />

@@ -30,10 +30,10 @@ const LoadMoreItems = ({ items }) => {
       ))}
       {items.length > visibleItems.length && (
         <button
-          className="mx-5 md:mx-0 px-1 py-2 w-24 md:px-2 md:py-4 md:w-40 text-sm md:text-base  text-center rounded text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
+          className="mx-5 md:mx-0 px-1 py-2 w-24 md:px-2 md:py-4 md:w-40 text-sm md:text-base  text-center rounded text-black hover:text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
           onClick={handleLoadMore}
         >
-          Load More
+          Load More..
         </button>
       )}
     </div>

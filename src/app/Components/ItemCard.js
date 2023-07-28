@@ -42,7 +42,7 @@ const ItemCard = ({
           <div className="flex mt-3" aria-label="Read more">
             <a
               href={readMore}
-              className="px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 text-sm md:text-base text-center rounded text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
+              className="px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 text-sm md:text-base text-center rounded text-black hover:text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
             >
               Read More
             </a>

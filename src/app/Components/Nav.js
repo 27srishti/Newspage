@@ -65,55 +65,62 @@ export const Nav = () => {
   return (
     <section className="shadow-md">
       {/****************************************************** Top **************************************** */}
-      <header className="bg-white px-10   hidden -my-1  h-10  md:flex">
-        <nav className="block md:visible w-screen ">
-          <ul className="flex items-center justify-between">
-            {/* Properly nested list with list items */}
-            <li className="flex items-center">
-              <span className="bg-lime-600 px-2 py-1 text-sm text-white font-medium rounded-b">
-                TRENDING NOW
-              </span>
-              <span className="font-[200]  mx-5 m-2 text-sm">
-                <div
-                  className={`transition-transform ease-out duration-100 ${
-                    isAutoChanging
-                      ? "translate-x-40 opacity-0"
-                      : "-translate-x-0 opacity-100"
-                  }`}
-                >
-                  {sentences[currentText]}
-                </div>
-              </span>
-            </li>
-            <li className="opacity-50  cursor-pointer  flex">
-              <button className="w-5 h-5  hover:bg-lime-600">
-                <img
-                  onClick={goToPreviousSentence}
-                  className=""
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios/50/right-squared--v1.png"
-                  alt="right-squared--v1"
-                />
-              </button>
-              <button
-                onClick={goToNextSentence}
-                className="w-5 h-5 hover:bg-lime-600"
+      <header className="bg-white px-10 hidden -my-1 h-10 md:flex">
+      <nav className="block md:visible w-screen">
+        <ul className="flex items-center justify-between">
+          {/* Properly nested list with list items */}
+          <li className="flex items-center">
+            <span className="bg-lime-600 px-2 py-1 text-sm text-black font-medium rounded-b">
+              TRENDING NOW
+            </span>
+            <span className="font-[200] mx-5 m-2 text-sm">
+              <div
+                className={`transition-transform ease-out duration-100 ${
+                  isAutoChanging
+                    ? "translate-x-40 opacity-0"
+                    : "-translate-x-0 opacity-100"
+                }`}
               >
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios/50/left-squared--v1.png"
-                  alt="left-squared--v1"
-                />
-              </button>
-            </li>
-            <li className="text-xs hover:text-lime-600 cursor-pointer text-gray-500">
+                {sentences[currentText]}
+              </div>
+            </span>
+          </li>
+          <li className="opacity-50 cursor-pointer flex">
+            <button className="w-5 h-5 hover:bg-lime-600" aria-label="Previous">
+              <img
+                onClick={goToPreviousSentence}
+                className=""
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios/50/right-squared--v1.png"
+                alt="right-squared--v1"
+              />
+            </button>
+            <button
+              onClick={goToNextSentence}
+              className="w-5 h-5 hover:bg-lime-600"
+              aria-label="Next"
+            >
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios/50/left-squared--v1.png"
+                alt="left-squared--v1"
+              />
+            </button>
+          </li>
+          <li className="text-xs hover:text-lime-600 cursor-pointer text-gray-500">
+            <a
+              href="/signin"
+              aria-label="Sign in / Join"
+              className="text-xs hover:text-lime-600 cursor-pointer text-gray-500"
+            >
               Sign in / Join
-            </li>
-          </ul>
-        </nav>
-      </header>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
       {/******************************************** middle********************************************* */}
 
       <header className="bg-white mb-4 grid justify-between px-10  hidden  md:visible md:flex">
@@ -187,7 +194,7 @@ export const Nav = () => {
               </svg>
             </a>
           </li>
-          <li className=" md:hidden lg:flex item-center text-xs font-extralight  ">
+          <li className=" md:hidden lg:flex item-center text-xs font-normal  ">
             {" "}
             Wednesday, July 26, 2023 {/* <Date/> */}
           </li>
@@ -212,7 +219,7 @@ export const Nav = () => {
             />
             Store
           </a>{" "}
-          <a href="https://news.networktigers.com/" className=" text-lime-500 flex  cursor-pointer">
+          <a href="https://news.networktigers.com/" className=" text-lime-900 flex  cursor-pointer">
             <div className="px-2 text-base font-medium">Search</div>
             <svg
               className="h-6 xl:h-6"
@@ -280,7 +287,7 @@ export const Nav = () => {
           <li key={linkObj.name}>
             <a
               href={linkObj.url} // Use the URL from the object
-              className="text-xs lg:text-sm font-semibold text-black hover:text-lime-500"
+              className="text-xs lg:text-sm font-semibold text-black hover:text-lime-600"
             >
               {linkObj.name} {/* Use the link name from the object */}
             </a>

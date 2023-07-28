@@ -2,7 +2,7 @@ import React from "react";
 
 export const Bottom = () => {
   return (
-    <section className="px-5 md:px-10 py-10 mx-auto overflow-x-hidden font-poppins bg-gray-100">
+    <section className="px-5 md:px-10 py-10 mx-auto overflow-x-hidden font-poppins bg-gray-200">
       <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-12">
         {/* ----------------------------1st column ----------------------------------------- */}
         <div className="flex flex-col justify-evenly xl:col-span-3 md:col-span-4 col-span-12 py-2 space-y-8  ">
@@ -163,7 +163,7 @@ export const Bottom = () => {
                 >
                   FBI cybersecurity noteworthy wins and losses
                 </a>
-                <p className="mt-auto text-xs  text-gray-400">May 13, 2023</p>
+                <p className="mt-auto text-xs  text-gray-600">May 13, 2023</p>
               </div>
             </div>
             <div className="flex py-4 space-x-2">
@@ -184,7 +184,7 @@ export const Bottom = () => {
                 >
                   Ransomware attacks on schools are surging
                 </a>
-                <p className="mt-auto text-xs  text-gray-400">May 4, 2023</p>
+                <p className="mt-auto text-xs  text-gray-600">May 4, 2023</p>
               </div>
             </div>
             <div className="flex py-4 space-x-2">
@@ -205,7 +205,7 @@ export const Bottom = () => {
                 >
                   What are pig butchering scams?
                 </a>
-                <p className="mt-auto text-xs  text-gray-400">April 29, 2023</p>
+                <p className="mt-auto text-xs  text-gray-600">April 29, 2023</p>
               </div>
             </div>
             <div className="flex py-4 space-x-2">
@@ -227,7 +227,7 @@ export const Bottom = () => {
                 >
                   Understanding Access Point options: MIMO vs. MU-MIMO
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">
+                <p className="mt-auto text-xs  . text-gray-600">
                   April 20, 2023
                 </p>
               </div>
@@ -267,7 +267,7 @@ export const Bottom = () => {
                 >
                   Maximizing ROI on network equipment
                 </a>
-                <p className="mt-auto text-xs text-gray-400">July 20, 2023</p>
+                <p className="mt-auto text-xs text-gray-600">July 20, 2023</p>
               </div>
             </div>
             <div className="flex py-4 space-x-2">
@@ -287,7 +287,7 @@ export const Bottom = () => {
                 >
                   Cybersecurity news weekly roundup July 17, 2023
                 </a>
-                <p className="mt-auto text-xs text-gray-400">July 17, 2023</p>
+                <p className="mt-auto text-xs text-gray-600">July 17, 2023</p>
               </div>
             </div>
             <div className="flex py-4 space-x-2">
@@ -307,7 +307,7 @@ export const Bottom = () => {
                 >
                   Understanding the role of switches in networking
                 </a>
-                <p className="mt-auto text-xs  . text-gray-400">
+                <p className="mt-auto text-xs  . text-gray-600">
                   July 15, 2023
                 </p>
               </div>
@@ -329,7 +329,7 @@ export const Bottom = () => {
                 >
                   The importance of firewalls in securing your network
                 </a>
-                <p className="mt-auto text-xs text-gray-400">July 13, 2023</p>
+                <p className="mt-auto text-xs text-gray-600">July 13, 2023</p>
               </div>
             </div>
           </div>
@@ -339,6 +339,21 @@ export const Bottom = () => {
         <div className="py-5 pb-2 xl:col-span-3 md:col-span-12 col-span-12 lg:block">
           <div>
             <ul>
+            <div className=" pt-5 pb-3  ">
+                <div className="relative flex items-center  mb-3 text-gray-600 hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
+                  <div className="relative ">
+                    <div className="absolute bottom-0 text-center inline-block w-40 xl:w-40 py-2   text-white font-medium bg-lime-600 rounded">
+                      <span className="inline-block text-sm text-center leading-tight">
+                        Popular Categories
+                      </span>
+                      <span
+                        className="absolute bottom-0 right-0 w-3 h-3  -mb-1 transform rotate-45 bg-lime-600"
+                        style={{ left: "50%" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
               <li className="px-1  transition duration-300">
                 <a
                   href="https://news.networktigers.com/category/all-articles/"
