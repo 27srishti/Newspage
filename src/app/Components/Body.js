@@ -109,7 +109,7 @@ export const Body = () => {
           <div className="block lg:flex md:px-2 lg:p-0 mt-10 mb-10">
             <div className="container mx-auto my-8 ">
             {items.map((item, index) => (
-                <ItemCard
+            <ItemCard
                   key={index}
                   title={item.title}
                   imageUrl={item.imageUrl}
@@ -120,6 +120,7 @@ export const Body = () => {
                   readMore={item.readMore}
                 />
               ))}
+              <LoadMoreItems items={items} />
             </div>
 
             {/* ***********************************right sidebar ************************************************* */}
