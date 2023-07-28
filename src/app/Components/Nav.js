@@ -247,6 +247,7 @@ export const Nav = () => {
             Store
           </a>{" "}
           <a
+           aria-label="search"
             href="https://news.networktigers.com/"
             className=" text-lime-900 flex  cursor-pointer"
           >
@@ -287,14 +288,14 @@ export const Nav = () => {
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
               </svg>
             </button>
-            <a href="https://news.networktigers.com" className="">
+            <a  aria-label="search" href="https://news.networktigers.com" className="">
               <img
                 className="block   h-5  bg-no-repeat bg-center bg-cover "
                 src="/images/Logo.avif"
                 alt="H1"
               />
             </a>
-            <a href="/" className=" text-neutral-500 flex cursor-pointer ">
+            <a aria-label="search" href="/" className=" text-neutral-500 flex cursor-pointer ">
               <svg
                 className="h-5 items-center xl:h-6"
                 aria-hidden="true"
@@ -335,13 +336,13 @@ export const Nav = () => {
           <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" />
           <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
             <div className="flex items-center mb-8">
-              <a className="mr-auto text-3xl font-bold leading-none" href="/">
-                <img
-                  className="block   h-5  bg-no-repeat bg-center bg-cover "
-                  src="/images/Logo.avif"
-                  alt="H1"
-                />
-              </a>
+            <a className="mr-auto text-3xl font-bold leading-none" href="/">
+  <img
+    className="block h-full w-48 bg-no-repeat bg-center bg-cover"
+    src="/images/Logo.avif"
+    alt="H1"
+  />
+</a>
               <button onClick={mobNav} className="navbar-close">
                 <svg
                   className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
