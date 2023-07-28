@@ -21,7 +21,7 @@ const ItemCard = ({
           <img
             className="w-full h-80 md:w-full lg:w-[30rem] mb-5 md:mb-5 lg:mb-0 lg:h-[15rem] object-cover md:rounded"
             src={imageUrl}
-            alt={title}
+            alt={`Image for news item: ${title}`} /* Add a descriptive alternative text */
           />
         </div>
         <div className="bg-white rounded pl-5 lg:pl-5 md:pl-0 flex w-full flex-col justify-evenly leading-normal">
@@ -37,8 +37,8 @@ const ItemCard = ({
                 {name} - <span className="font-light">{date}</span>
               </div>
             </div>
-            <p className="text-gray-500 w-[90%] text-base">{description}</p>
           </div>
+          <p className="text-gray-500 w-[90%] text-base">{description}</p>
           <div className="flex mt-3" aria-label="Read more">
             <a
               href={readMore}
