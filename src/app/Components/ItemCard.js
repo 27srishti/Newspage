@@ -22,6 +22,9 @@ const ItemCard = ({
             className="w-full h-80 md:w-full lg:w-[30rem] mb-5 md:mb-5 lg:mb-0 lg:h-[15rem] object-cover md:rounded"
             src={imageUrl}
             alt={`Image for news item: ${title}`}
+            loading="lazy"
+            width="480"
+            height="300"
           />
         </div>
         <div className="bg-white rounded pl-5 lg:pl-5 md:pl-0 flex w-full flex-col justify-evenly leading-normal">
@@ -40,11 +43,12 @@ const ItemCard = ({
           </div>
           <p className="text-gray-500 w-[90%] text-base">{description}</p>
           <div className="flex mt-3" aria-label="Read more">
+            {/* Update the link text for accessibility */}
             <a
               href={readMore}
               className="px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 text-sm md:text-base text-center rounded text-black hover:text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
             >
-              Read More
+              Read More - {title}
             </a>
           </div>
         </div>
