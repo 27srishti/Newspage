@@ -228,7 +228,7 @@ export const Nav = () => {
           className=" flex-shrink-0 flex items-center   "
         >
           <img
-            className="md:w-80  lg:w-96 2xl:w-full"
+            className="md:w-80  lg:w-96 2xl:w-full h-10"
             src="images/Logo.avif"
             alt="Logo"
           />
@@ -240,7 +240,7 @@ export const Nav = () => {
             className="bg-red-600 text grid grid-flow-col text-center mx-5 md:text-sm hover:bg-gray-700 items-center text-white font-normal md:px-2 xl:px-3  md:py-1 xl:py-1 rounded"
           >
             <img
-              className="mr-1 pt-1 w-5  "
+              className="mr-1 pt-1 w-5 h-7 "
               src="images/icons.avif"
               alt="shopping-cart"
             />
