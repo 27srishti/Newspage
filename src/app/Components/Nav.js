@@ -67,14 +67,13 @@ export const Nav = () => {
       {/****************************************************** Top **************************************** */}
       <header className="bg-white px-10   hidden -my-1  h-10  md:flex">
         <nav className="block md:visible w-screen ">
-          {" "}
-          <ul className="flex items-center justify-between  ">
-            <div className="flex items-center ">
-              <li className=" bg-lime-600 px-2  py-1 text-sm text-white font-medium rounded-b ">
-                {" "}
-                TRENDING NOW{" "}
-              </li>
-              <div className=" font-[200]  mx-5 m-2 text-sm">
+          <ul className="flex items-center justify-between">
+            {/* Properly nested list with list items */}
+            <li className="flex items-center">
+              <span className="bg-lime-600 px-2 py-1 text-sm text-white font-medium rounded-b">
+                TRENDING NOW
+              </span>
+              <span className="font-[200]  mx-5 m-2 text-sm">
                 <div
                   className={`transition-transform ease-out duration-100 ${
                     isAutoChanging
@@ -82,12 +81,11 @@ export const Nav = () => {
                       : "-translate-x-0 opacity-100"
                   }`}
                 >
-                  {" "}
                   {sentences[currentText]}
-                </div>{" "}
-              </div>
-            </div>
-            <li className=" opacity-50  cursor-pointer  flex">
+                </div>
+              </span>
+            </li>
+            <li className="opacity-50  cursor-pointer  flex">
               <button className="w-5 h-5  hover:bg-lime-600">
                 <img
                   onClick={goToPreviousSentence}
@@ -110,13 +108,12 @@ export const Nav = () => {
                 />
               </button>
             </li>
-            <li className="text-xs hover:text-lime-600 cursor-pointer text-gray-500 ">
+            <li className="text-xs hover:text-lime-600 cursor-pointer text-gray-500">
               Sign in / Join
             </li>
           </ul>
         </nav>
       </header>
-
       {/******************************************** middle********************************************* */}
 
       <header className="bg-white mb-4 grid justify-between px-10  hidden  md:visible md:flex">
