@@ -2,15 +2,33 @@
 import { useEffect, useState } from "react";
 
 const linksWithUrls = [
-  { name: "Industry News", url: "https://news.networktigers.com/category/industry-news/" },
-    { name: "Network News", url: "https://news.networktigers.com/category/network-news/" },
-    { name: "Cybersecurity News", url: "https://news.networktigers.com/category/cybersecurity-news/" },
-    { name: "Remote Work", url: "https://news.networktigers.com/category/remote-work/" },
-    { name: "NetworkTigers News", url: "https://news.networktigers.com/category/networktigers-news/" },
-    { name: "Opinion & Analysis", url: "https://news.networktigers.com/category/opinion/" },
-    { name: "Authors", url: "https://news.networktigers.com/authors/" },
-    { name: "Newsletter", url: "https://news.networktigers.com/newsletter/" },
-    { name: "About Us", url: "https://news.networktigers.com/about-us/" },
+  {
+    name: "Industry News",
+    url: "https://news.networktigers.com/category/industry-news/",
+  },
+  {
+    name: "Network News",
+    url: "https://news.networktigers.com/category/network-news/",
+  },
+  {
+    name: "Cybersecurity News",
+    url: "https://news.networktigers.com/category/cybersecurity-news/",
+  },
+  {
+    name: "Remote Work",
+    url: "https://news.networktigers.com/category/remote-work/",
+  },
+  {
+    name: "NetworkTigers News",
+    url: "https://news.networktigers.com/category/networktigers-news/",
+  },
+  {
+    name: "Opinion & Analysis",
+    url: "https://news.networktigers.com/category/opinion/",
+  },
+  { name: "Authors", url: "https://news.networktigers.com/authors/" },
+  { name: "Newsletter", url: "https://news.networktigers.com/newsletter/" },
+  { name: "About Us", url: "https://news.networktigers.com/about-us/" },
 ];
 
 const sentences = [
@@ -66,67 +84,71 @@ export const Nav = () => {
     <section className="shadow-md">
       {/****************************************************** Top **************************************** */}
       <header className="bg-white px-10 hidden -my-1 h-10 md:flex">
-      <nav className="block md:visible w-screen">
-        <ul className="flex items-center justify-between">
-          {/* Properly nested list with list items */}
-          <li className="flex items-center">
-            <span className="bg-lime-600 px-2 py-1 text-sm text-black font-medium rounded-b">
-              TRENDING NOW
-            </span>
-            <span className="font-[200] mx-5 m-2 text-sm">
-              <div
-                className={`transition-transform ease-out duration-100 ${
-                  isAutoChanging
-                    ? "translate-x-40 opacity-0"
-                    : "-translate-x-0 opacity-100"
-                }`}
+        <nav className="block md:visible w-screen">
+          <ul className="flex items-center justify-between">
+            {/* Properly nested list with list items */}
+            <li className="flex items-center">
+              <span className="bg-lime-600 px-2 py-1 text-sm text-black font-medium rounded-b">
+                TRENDING NOW
+              </span>
+              <span className="font-[200] mx-5 m-2 text-sm">
+                <div
+                  className={`transition-transform ease-out duration-100 ${
+                    isAutoChanging
+                      ? "translate-x-40 opacity-0"
+                      : "-translate-x-0 opacity-100"
+                  }`}
+                >
+                  {sentences[currentText]}
+                </div>
+              </span>
+            </li>
+            <li className="opacity-50 cursor-pointer flex">
+              <button
+                className="w-5 h-5 hover:bg-lime-600"
+                aria-label="Previous"
               >
-                {sentences[currentText]}
-              </div>
-            </span>
-          </li>
-          <li className="opacity-50 cursor-pointer flex">
-            <button className="w-5 h-5 hover:bg-lime-600" aria-label="Previous">
-              <img
-                onClick={goToPreviousSentence}
-                className=""
-                width="50"
-                height="50"
-                src="https://img.icons8.com/ios/50/right-squared--v1.png"
-                alt="right-squared--v1"
-              />
-            </button>
-            <button
-              onClick={goToNextSentence}
-              className="w-5 h-5 hover:bg-lime-600"
-              aria-label="Next"
-            >
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/ios/50/left-squared--v1.png"
-                alt="left-squared--v1"
-              />
-            </button>
-          </li>
-          <li className="text-xs hover:text-lime-600 cursor-pointer text-gray-500">
-            <a
-              href="/signin"
-              aria-label="Sign in / Join"
-              className="text-xs hover:text-lime-600 cursor-pointer text-gray-500"
-            >
-              Sign in / Join
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+                <img
+                  onClick={goToPreviousSentence}
+                  className=""
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/ios/50/right-squared--v1.png"
+                  alt="right-squared--v1"
+                />
+              </button>
+              <button
+                onClick={goToNextSentence}
+                className="w-5 h-5 hover:bg-lime-600"
+                aria-label="Next"
+              >
+                <img
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/ios/50/left-squared--v1.png"
+                  alt="left-squared--v1"
+                />
+              </button>
+            </li>
+            <li className="text-xs hover:text-lime-600 cursor-pointer text-gray-500">
+              <a
+                href="/signin"
+                aria-label="Sign in / Join"
+                className="text-xs hover:text-lime-600 cursor-pointer text-gray-500"
+              >
+                Sign in / Join
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       {/******************************************** middle********************************************* */}
 
       <header className="bg-white mb-4 grid justify-between px-10  hidden  md:visible md:flex">
         <ul className="flex items-center ">
           <li className="px-1">
             <a
+              aria-label="Twitter"
               href="https://twitter.com/networktigers"
               className="inline-block rounded-full  p-2  hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
             >
@@ -150,6 +172,7 @@ export const Nav = () => {
           </li>
           <li className="px-1">
             <a
+            aria-label="Facebook"
               href="https://www.facebook.com/networktigers/"
               className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
             >
@@ -173,6 +196,7 @@ export const Nav = () => {
           </li>
           <li className="p-1 mr-3">
             <a
+             aria-label="LinkedIn"
               href="https://www.linkedin.com/company/networktigers/"
               className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
             >
@@ -199,7 +223,10 @@ export const Nav = () => {
             Wednesday, July 26, 2023 {/* <Date/> */}
           </li>
         </ul>
-        <a href="https://news.networktigers.com/" className=" flex-shrink-0 flex items-center   ">
+        <a
+          href="https://news.networktigers.com/"
+          className=" flex-shrink-0 flex items-center   "
+        >
           <img
             className="md:w-80  lg:w-96 2xl:w-full"
             src="images/Logo.avif"
@@ -219,7 +246,10 @@ export const Nav = () => {
             />
             Store
           </a>{" "}
-          <a href="https://news.networktigers.com/" className=" text-lime-900 flex  cursor-pointer">
+          <a
+            href="https://news.networktigers.com/"
+            className=" text-lime-900 flex  cursor-pointer"
+          >
             <div className="px-2 text-base font-medium">Search</div>
             <svg
               className="h-6 xl:h-6"
@@ -283,16 +313,16 @@ export const Nav = () => {
             </a>
           </div>
           <ul className="hidden  text-center absolute justify-center top-1/2  left-1/2 transform -translate-y-1/2 -translate-x-1/2 md:flex lg:mx-auto  md:items-center md:w-full md:space-x-4  xl:space-x-8">
-          {linksWithUrls.map((linkObj) => (
-          <li key={linkObj.name}>
-            <a
-              href={linkObj.url} // Use the URL from the object
-              className="text-xs lg:text-sm font-semibold text-black hover:text-lime-600"
-            >
-              {linkObj.name} {/* Use the link name from the object */}
-            </a>
-          </li>
-        ))}
+            {linksWithUrls.map((linkObj) => (
+              <li key={linkObj.name}>
+                <a
+                  href={linkObj.url} // Use the URL from the object
+                  className="text-xs lg:text-sm font-semibold text-black hover:text-lime-600"
+                >
+                  {linkObj.name} {/* Use the link name from the object */}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
         <div
@@ -331,19 +361,17 @@ export const Nav = () => {
             </div>
             <div>
               <ul>
-              {linksWithUrls.map((linkObj) => (
+                {linksWithUrls.map((linkObj) => (
                   <li key={linkObj.name} className="mb-1">
                     <a
-                    href={linkObj.url} // Use the URL from the object
+                      href={linkObj.url} // Use the URL from the object
                       className="block p-4 text-sm font-semibold text-gray-400 hover:bg-lime-50 hover:text-lime-600 rounded"
-                      
                     >
-                       {linkObj.name} {/* Use the link name from the object */}
+                      {linkObj.name} {/* Use the link name from the object */}
                     </a>
                   </li>
                 ))}
               </ul>
-            
             </div>
           </nav>
         </div>
