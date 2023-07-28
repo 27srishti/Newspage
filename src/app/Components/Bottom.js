@@ -137,106 +137,106 @@ export const Bottom = () => {
         </div>
         {/* ----------------------------2nd column ----------------------------------------- */}
         <div className="hidden pt-10 xl:col-span-3 md:col-span-4 md:block lg:block">
-      <div className="relative flex items-center mb-3 text-gray-600 hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
-        <div className="relative">
-          <div className="absolute bottom-0 text-center inline-block w-36 xl:w-36 px-4 py-2 font-medium text-white bg-neutral-500 rounded">
-            <span className="inline-block text-sm text-center leading-tight">
-              Editor Picks
-            </span>
-            <span
-              className="absolute bottom-0 right-0 w-3 h-3 -mb-1 transform rotate-45 bg-neutral-500"
-              style={{ left: '50%' }}
-            />
+          <div className="relative flex items-center mb-3 text-gray-600 hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
+            <div className="relative">
+              <div className="absolute bottom-0 text-center inline-block w-36 xl:w-36 px-4 py-2 font-medium text-white bg-neutral-500 rounded">
+                <span className="inline-block text-sm text-center leading-tight">
+                  Editor Picks
+                </span>
+                <span
+                  className="absolute bottom-0 right-0 w-3 h-3 -mb-1 transform rotate-45 bg-neutral-500"
+                  style={{ left: "50%" }}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col divide-y divide-gray-300">
+            <div className="flex py-4 space-x-2">
+              <a href="https://news.networktigers.com/opinion/fbi-cybersecurity-noteworthy-wins-and-losses/">
+                <img
+                  className="md:hidden lg:block object-cover rounded w-26 h-16"
+                  src="/images/FBI cybersecurity noteworthy wins and losses.avif"
+                  alt="FBI cybersecurity noteworthy wins and losses"
+                  width={104} // Replace with the actual width of the image in pixels
+                  height={64} // Replace with the actual height of the image in pixels
+                />
+              </a>
+              <div className="flex flex-col flex-grow">
+                <a
+                  rel="noopener noreferrer"
+                  href="https://news.networktigers.com/opinion/fbi-cybersecurity-noteworthy-wins-and-losses/"
+                  className="font-poppins hover:underline"
+                >
+                  FBI cybersecurity noteworthy wins and losses
+                </a>
+                <p className="mt-auto text-xs text-gray-600">May 13, 2023</p>
+              </div>
+            </div>
+            <div className="flex py-4 space-x-2">
+              <a href="https://news.networktigers.com/opinion/ransomware-attacks-on-schools-are-surging/">
+                <img
+                  className="md:hidden lg:block object-cover rounded w-26 h-16"
+                  src="/images/Ransomware attacks on schools are surging.avif"
+                  alt="Ransomware attacks on schools are surging"
+                  width={104} // Replace with the actual width of the image in pixels
+                  height={64} // Replace with the actual height of the image in pixels
+                />
+              </a>
+              <div className="flex flex-col flex-grow">
+                <a
+                  rel="noopener noreferrer"
+                  href="https://news.networktigers.com/opinion/ransomware-attacks-on-schools-are-surging/"
+                  className="font-poppins hover:underline"
+                >
+                  Ransomware attacks on schools are surging
+                </a>
+                <p className="mt-auto text-xs text-gray-600">May 4, 2023</p>
+              </div>
+            </div>
+            <div className="flex py-4 space-x-2">
+              <a href="https://news.networktigers.com/opinion/what-are-pig-butchering-scams/">
+                <img
+                  className="md:hidden lg:block object-cover rounded w-[4.5rem] xl:w-20 h-16"
+                  src="/images/What are pig butchering scams.avif"
+                  alt="What are pig butchering scams?"
+                  width={72} // Replace with the actual width of the image in pixels
+                  height={64} // Replace with the actual height of the image in pixels
+                />
+              </a>
+              <div className="flex flex-col flex-grow">
+                <a
+                  rel="noopener noreferrer"
+                  href="https://news.networktigers.com/opinion/what-are-pig-butchering-scams/"
+                  className="font-poppins hover:underline"
+                >
+                  What are pig butchering scams?
+                </a>
+                <p className="mt-auto text-xs text-gray-600">April 29, 2023</p>
+              </div>
+            </div>
+            <div className="flex py-4 space-x-2">
+              <a href="https://news.networktigers.com/opinion/understanding-access-point-options-mimo-vs-mu-mimo/">
+                <img
+                  className="md:hidden lg:block object-cover rounded w-26 h-16"
+                  src="/images/Understanding Access Point options.avif"
+                  alt="Understanding Access Point options: MIMO vs. MU-MIMO"
+                  width={104} // Replace with the actual width of the image in pixels
+                  height={64} // Replace with the actual height of the image in pixels
+                />
+              </a>
+              <div className="flex flex-col flex-grow">
+                <a
+                  rel="noopener noreferrer"
+                  href="https://news.networktigers.com/opinion/understanding-access-point-options-mimo-vs-mu-mimo/"
+                  className="font-poppins hover:underline"
+                >
+                  Understanding Access Point options: MIMO vs. MU-MIMO
+                </a>
+                <p className="mt-auto text-xs text-gray-600">April 20, 2023</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col divide-y divide-gray-300">
-        <div className="flex py-4 space-x-2">
-          <a href="https://news.networktigers.com/opinion/fbi-cybersecurity-noteworthy-wins-and-losses/">
-            <img
-              className="md:hidden lg:block object-cover rounded w-26 h-16"
-              src="/images/FBI cybersecurity noteworthy wins and losses.avif"
-              alt="FBI cybersecurity noteworthy wins and losses"
-              width={104} // Replace with the actual width of the image in pixels
-              height={64} // Replace with the actual height of the image in pixels
-            />
-          </a>
-          <div className="flex flex-col flex-grow">
-            <a
-              rel="noopener noreferrer"
-              href="https://news.networktigers.com/opinion/fbi-cybersecurity-noteworthy-wins-and-losses/"
-              className="font-poppins hover:underline"
-            >
-              FBI cybersecurity noteworthy wins and losses
-            </a>
-            <p className="mt-auto text-xs text-gray-600">May 13, 2023</p>
-          </div>
-        </div>
-        <div className="flex py-4 space-x-2">
-          <a href="https://news.networktigers.com/opinion/ransomware-attacks-on-schools-are-surging/">
-            <img
-              className="md:hidden lg:block object-cover rounded w-26 h-16"
-              src="/images/Ransomware attacks on schools are surging.avif"
-              alt="Ransomware attacks on schools are surging"
-              width={104} // Replace with the actual width of the image in pixels
-              height={64} // Replace with the actual height of the image in pixels
-            />
-          </a>
-          <div className="flex flex-col flex-grow">
-            <a
-              rel="noopener noreferrer"
-              href="https://news.networktigers.com/opinion/ransomware-attacks-on-schools-are-surging/"
-              className="font-poppins hover:underline"
-            >
-              Ransomware attacks on schools are surging
-            </a>
-            <p className="mt-auto text-xs text-gray-600">May 4, 2023</p>
-          </div>
-        </div>
-        <div className="flex py-4 space-x-2">
-          <a href="https://news.networktigers.com/opinion/what-are-pig-butchering-scams/">
-            <img
-              className="md:hidden lg:block object-cover rounded w-[4.5rem] xl:w-20 h-16"
-              src="/images/What are pig butchering scams.avif"
-              alt="What are pig butchering scams?"
-              width={72} // Replace with the actual width of the image in pixels
-              height={64} // Replace with the actual height of the image in pixels
-            />
-          </a>
-          <div className="flex flex-col flex-grow">
-            <a
-              rel="noopener noreferrer"
-              href="https://news.networktigers.com/opinion/what-are-pig-butchering-scams/"
-              className="font-poppins hover:underline"
-            >
-              What are pig butchering scams?
-            </a>
-            <p className="mt-auto text-xs text-gray-600">April 29, 2023</p>
-          </div>
-        </div>
-        <div className="flex py-4 space-x-2">
-          <a href="https://news.networktigers.com/opinion/understanding-access-point-options-mimo-vs-mu-mimo/">
-            <img
-              className="md:hidden lg:block object-cover rounded w-26 h-16"
-              src="/images/Understanding Access Point options.avif"
-              alt="Understanding Access Point options: MIMO vs. MU-MIMO"
-              width={104} // Replace with the actual width of the image in pixels
-              height={64} // Replace with the actual height of the image in pixels
-            />
-          </a>
-          <div className="flex flex-col flex-grow">
-            <a
-              rel="noopener noreferrer"
-              href="https://news.networktigers.com/opinion/understanding-access-point-options-mimo-vs-mu-mimo/"
-              className="font-poppins hover:underline"
-            >
-              Understanding Access Point options: MIMO vs. MU-MIMO
-            </a>
-            <p className="mt-auto text-xs text-gray-600">April 20, 2023</p>
-          </div>
-        </div>
-      </div>
-    </div>
         {/* ----------------------------3nd column ----------------------------------------- */}
         <div className="hidden pt-10 xl:col-span-3 md:col-span-4 md:block lg:block">
           <div className="relative flex items-center  mb-3 text-gray-600 hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
@@ -344,146 +344,145 @@ export const Bottom = () => {
 
         {/* ----------------------------4th column ----------------------------------------- */}
         <div className="py-5 pb-2 xl:col-span-3 md:col-span-12 col-span-12 lg:block">
-  <div>
-    <div className="pt-5 pb-3">
-      <div className="relative flex items-center mb-3 text-gray-600 hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
-        <div className="relative">
-          <div className="absolute bottom-0 text-center inline-block w-40 xl:w-40 py-2 text-white font-medium bg-orange-700 rounded">
-            <span className="inline-block text-sm text-center leading-tight">
-              Popular Categories
-            </span>
-            <span
-              className="absolute bottom-0 right-0 w-3 h-3 -mb-1 transform rotate-45 bg-orange-700"
-              style={{ left: "50%" }}
-            />
+          <div>
+            <div className="pt-5 pb-3">
+              <div className="relative flex items-center mb-3 text-gray-600 hover:text-blue-400 cursor-pointer hover:text-gray-600 hover:text-blue-500">
+                <div className="relative">
+                  <div className="absolute bottom-0 text-center inline-block w-40 xl:w-40 py-2 text-white font-medium bg-orange-700 rounded">
+                    <span className="inline-block text-sm text-center leading-tight">
+                      Popular Categories
+                    </span>
+                    <span
+                      className="absolute bottom-0 right-0 w-3 h-3 -mb-1 transform rotate-45 bg-orange-700"
+                      style={{ left: "50%" }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li className="px-1  transition duration-300">
+                <div className="tap-target-wrapper">
+                  <a
+                    href="https://news.networktigers.com/category/all-articles/"
+                    className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
+                  >
+                    All Articles
+                    <span
+                      href="https://news.networktigers.com/category/all-articles/"
+                      className="text-gray-600 hover:text-blue-400 ml-auto"
+                    >
+                      563
+                    </span>
+                    <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
+                  </a>
+                </div>
+              </li>
+              <li className="px-1   transition duration-300">
+                <div className="tap-target-wrapper">
+                  <a
+                    href="https://news.networktigers.com/category/industry-news/"
+                    className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
+                  >
+                    Industry News
+                    <span
+                      href="https://news.networktigers.com/category/industry-news/"
+                      className="text-gray-600 hover:text-blue-400 ml-auto "
+                    >
+                      355
+                    </span>
+                    <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
+                  </a>
+                </div>
+              </li>
+              <li className="px-1 ">
+                <div className="tap-target-wrapper">
+                  <a
+                    href="https://news.networktigers.com/category/opinion/"
+                    className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
+                  >
+                    Opinion & Analysis
+                    <span
+                      href="https://news.networktigers.com/category/opinion/"
+                      className="text-gray-600 hover:text-blue-400 ml-auto"
+                    >
+                      278
+                    </span>
+                    <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
+                  </a>
+                </div>
+              </li>
+              <li className="px-1 ">
+                <div className="tap-target-wrapper">
+                  <a
+                    href="https://news.networktigers.com/category/cybersecurity-news/"
+                    className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
+                  >
+                    Cybersecurity News
+                    <span
+                      href="https://news.networktigers.com/category/cybersecurity-news/"
+                      className="text-gray-600 hover:text-blue-400 ml-auto"
+                    >
+                      191
+                    </span>
+                    <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
+                  </a>
+                </div>
+              </li>
+              <li className="px-1 ">
+                <div className="tap-target-wrapper">
+                  <a
+                    href="https://news.networktigers.com/category/networktigers-news/"
+                    className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
+                  >
+                    NetworkTigers News
+                    <span
+                      href="https://news.networktigers.com/category/networktigers-news/"
+                      className="text-gray-600 hover:text-blue-400 ml-auto"
+                    >
+                      135
+                    </span>
+                    <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
+                  </a>
+                </div>
+              </li>{" "}
+              <li className="px-1 ">
+                <div className="tap-target-wrapper">
+                  <a
+                    href="https://news.networktigers.com/category/network-news/"
+                    className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
+                  >
+                    Network News
+                    <span
+                      href="https://news.networktigers.com/category/network-news/"
+                      className="text-gray-600 hover:text-blue-400 ml-auto"
+                    >
+                      100
+                    </span>
+                    <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
+                  </a>
+                </div>
+              </li>{" "}
+              <li className="px-1 ">
+                <div className="tap-target-wrapper">
+                  <a
+                    href="https://news.networktigers.com/category/remote-work/"
+                    className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
+                  >
+                    Remote Work
+                    <span
+                      href="https://news.networktigers.com/category/remote-work/"
+                      className="text-gray-600 hover:text-blue-400 ml-auto"
+                    >
+                      61
+                    </span>
+                    <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
+                  </a>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-    <ul>
-      <li className="px-1  transition duration-300">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/all-articles/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            All Articles
-            <span
-              href="https://news.networktigers.com/category/all-articles/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              563
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>
-      <li className="px-1   transition duration-300">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/industry-news/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            Industry News
-            <span
-              href="https://news.networktigers.com/category/industry-news/"
-              className="text-gray-600 hover:text-blue-400 ml-auto "
-            >
-              355
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>
-      <li className="px-1 ">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/opinion/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            Opinion & Analysis
-            <span
-              href="https://news.networktigers.com/category/opinion/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              278
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>
-      <li className="px-1 ">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/cybersecurity-news/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            Cybersecurity News
-            <span
-              href="https://news.networktigers.com/category/cybersecurity-news/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              191
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>
-      <li className="px-1 ">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/networktigers-news/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            NetworkTigers News
-            <span
-              href="https://news.networktigers.com/category/networktigers-news/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              135
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>{" "}
-      <li className="px-1 ">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/network-news/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            Network News
-            <span
-              href="https://news.networktigers.com/category/network-news/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              100
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>{" "}
-      <li className="px-1 ">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/remote-work/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            Remote Work
-            <span
-              href="https://news.networktigers.com/category/remote-work/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              61
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-
       </div>
     </section>
   );
