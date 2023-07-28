@@ -288,9 +288,9 @@ export const Nav = () => {
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
               </svg>
             </button>
-            <a  aria-label="search" href="https://news.networktigers.com" className="">
+            <a  aria-label="logo" href="https://news.networktigers.com" className="">
               <img
-                className="block   h-5  bg-no-repeat bg-center bg-cover "
+                className="block w-full  h-5  bg-no-repeat bg-center bg-cover "
                 src="/images/Logo.avif"
                 alt="H1"
               />

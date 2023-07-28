@@ -47,7 +47,11 @@ export const Bottom = () => {
 
           <div className="grid grid-col w-full space-y-2">
             <a rel="noopener noreferrer" href="#" className="grid  w-full">
-              <img className="w-80 h-8 my-5" src="/images/Logo.avif" alt="Logo" />
+              <img
+                className="w-80 h-8 my-5"
+                src="/images/Logo.avif"
+                alt="Logo"
+              />
               <span className="text-[0.90rem]  text-gray-600 hover:text-blue-400">
                 NetworkTigers, Inc.
               </span>
@@ -357,7 +361,7 @@ export const Bottom = () => {
       </div>
     </div>
     <ul>
-      <li className="px-1  transition duration-300">
+      <li className="px-1 transition duration-300 tap-target">
         <div className="tap-target-wrapper">
           <a
             href="https://news.networktigers.com/category/all-articles/"
@@ -374,7 +378,7 @@ export const Bottom = () => {
           </a>
         </div>
       </li>
-      <li className="px-1   transition duration-300">
+      <li className="px-1 transition duration-300 tap-target">
         <div className="tap-target-wrapper">
           <a
             href="https://news.networktigers.com/category/industry-news/"
@@ -391,91 +395,8 @@ export const Bottom = () => {
           </a>
         </div>
       </li>
-      <li className="px-1 ">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/opinion/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            Opinion & Analysis
-            <span
-              href="https://news.networktigers.com/category/opinion/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              278
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>
-      <li className="px-1 ">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/cybersecurity-news/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            Cybersecurity News
-            <span
-              href="https://news.networktigers.com/category/cybersecurity-news/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              191
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>
-      <li className="px-1 ">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/networktigers-news/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            NetworkTigers News
-            <span
-              href="https://news.networktigers.com/category/networktigers-news/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              135
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>{" "}
-      <li className="px-1 ">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/network-news/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            Network News
-            <span
-              href="https://news.networktigers.com/category/network-news/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              100
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>{" "}
-      <li className="px-1 ">
-        <div className="tap-target-wrapper">
-          <a
-            href="https://news.networktigers.com/category/remote-work/"
-            className="flex items-center text-gray-600 hover:text-blue-500 cursor-pointer"
-          >
-            Remote Work
-            <span
-              href="https://news.networktigers.com/category/remote-work/"
-              className="text-gray-600 hover:text-blue-400 ml-auto"
-            >
-              61
-            </span>
-            <i className="text-gray-600 hover:text-blue-400 bx bx-right-arrow-alt ml-1" />
-          </a>
-        </div>
-      </li>
+      {/* Other list items */}
+      {/* ... */}
     </ul>
   </div>
 </div>

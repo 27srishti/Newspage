@@ -13,27 +13,27 @@ export const Footer = () => {
 
         <ul className="flex-wrap flex-1 flex justify-center md:justify-end mt-3 text-[0.80rem] font-normal text-gray-100 sm:mt-0">
           <li>
-            <a href="https://news.networktigers.com/write-for-us/" className="tap-target mr-4 hover:text-yellow-500 md:mr-6">
+            <a href="https://news.networktigers.com/write-for-us/" className="mr-6 p-2 hover:text-yellow-500">
               Write For Us
             </a>
           </li>
           <li>
-            <a href="https://www.networktigers.com/pages/contact-us" className="tap-target mr-4 hover:text-yellow-500 md:mr-6">
+            <a href="https://www.networktigers.com/pages/contact-us" className="mr-6 p-2 hover:text-yellow-500">
               Contact Us
             </a>
           </li>
           <li>
-            <a href="https://www.networktigers.com/pages/privacy-policy" className="tap-target mr-4 hover:text-yellow-500 md:mr-6">
+            <a href="https://www.networktigers.com/pages/privacy-policy" className="mr-6 p-2 hover:text-yellow-500">
               Privacy Policy
             </a>
           </li>
           <li>
-            <a href="https://www.networktigers.com/pages/terms-of-use" className="tap-target mr-4 hover:text-yellow-500 md:mr-6">
+            <a href="https://www.networktigers.com/pages/terms-of-use" className="mr-6 p-2 hover:text-yellow-500">
               Terms
             </a>
           </li>
           <li>
-            <a href="https://www.networktigers.com/pages/cookie-policy" className="tap-target hover:text-yellow-500">
+            <a href="https://www.networktigers.com/pages/cookie-policy" className="p-2 hover:text-yellow-500">
               Cookies
             </a>
           </li>
