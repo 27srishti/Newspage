@@ -40,12 +40,12 @@ const ItemCard = ({
             </div>
           </div>
           <p className="text-gray-500 w-[90%] text-base">{description}</p>
-          <div className="flex mt-3" aria-label={`Read more about ${title}`}>
+          <div className="flex mt-3" aria-label="Read more">
             <a
               href={readMore}
-              className="px-1 py-2 w-auto md:px-2 md:py-2 md:w-auto text-sm md:text-base text-center rounded text-black hover:text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
+              className="px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 text-sm md:text-base text-center rounded text-black hover:text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
             >
-              {title} // Use the headline as the link text
+              Read More 
             </a>
           </div>
         </div>
