@@ -1,6 +1,3 @@
-// components/ItemCard.js
-// @client
-"use client";
 import React from 'react';
 
 const ItemCard = ({
@@ -16,9 +13,9 @@ const ItemCard = ({
     <div className="w-full">
       <a
         className="block rounded w-full lg:flex mb-10"
-        href={readMore} // Use the provided 'readMore' prop as the link destination
-        target="_blank" // Open link in a new tab
-        rel="noopener noreferrer" // Recommended for security reasons when using 'target="_blank"'
+        href={readMore}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <div>
           <img
@@ -29,9 +26,9 @@ const ItemCard = ({
         </div>
         <div className="bg-white rounded pl-5 lg:pl-5 md:pl-0 flex w-full flex-col justify-evenly leading-normal">
           <div>
-            <a href={readMore} className="mt-3 lg:mt-0 hover:text-lime-600 text-gray-700 font-bold text-2xl mb-2">
+            <h2 className="mt-3 lg:mt-0 hover:text-lime-600 text-gray-700 font-bold text-2xl mb-2">
               {title}
-            </a>
+            </h2>
             <div className="flex pb-6 pt-1">
               <div className="bg-neutral-600 hover:text-lime-400 px-2 py-1.5 text-center text-[0.75rem] rounded text-white">
                 {category}
@@ -42,7 +39,7 @@ const ItemCard = ({
             </div>
             <p className="text-gray-500 w-[90%] text-base">{description}</p>
           </div>
-          <div className="flex mt-3" aria-label="readmore">
+          <div className="flex mt-3" aria-label="Read more">
             <a
               href={readMore}
               className="px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 text-sm md:text-base text-center rounded text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
