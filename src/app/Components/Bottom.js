@@ -259,6 +259,8 @@ export const Bottom = () => {
                   className=" md:hidden lg:block object-cover rounded w-26 h-16"
                   src="/images/Maximizing ROI on network equipment.avif"
                   alt="LN1"
+                  width={72} // Replace with the actual width of the image in pixels
+                  height={64} // Replace with the actual height of the image in pixels
                 />
               </a>
 
@@ -279,6 +281,8 @@ export const Bottom = () => {
                   className=" md:hidden lg:block object-cover rounded w-26 h-16"
                   src="/images/Cybersecurity news weekly roundup July 17, 2023.avif"
                   alt="LN2"
+                  width={72} // Replace with the actual width of the image in pixels
+                  height={64} // Replace with the actual height of the image in pixels
                 />
               </a>
 
