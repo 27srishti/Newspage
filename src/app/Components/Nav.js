@@ -187,10 +187,10 @@ export const Nav = () => {
               </svg>
             </a>
           </li>
-          <h2 className=" md:hidden lg:flex item-center text-xs font-extralight  ">
+          <li className=" md:hidden lg:flex item-center text-xs font-extralight  ">
             {" "}
             Wednesday, July 26, 2023 {/* <Date/> */}
-          </h2>
+          </li>
         </ul>
         <a href="https://news.networktigers.com/" className=" flex-shrink-0 flex items-center   ">
           <img
