@@ -45,7 +45,8 @@ const ItemCard = ({
               href={readMore}
               className="px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 text-sm md:text-base text-center rounded text-black hover:text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
             >
-              Read More 
+              Read More <span className='sr-only '> -{title}</span>
+
             </a>
           </div>
         </div>
