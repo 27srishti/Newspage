@@ -10,6 +10,8 @@ export const Head = () => {
               className="block w-full h-full md:h-full lg:h-[80%] xl:h-[84.5%] 2xl:h-[70.5%]"
               src="/images/Head 1.avif"
               alt="H1"
+              width="883"
+              height="520"
             />
             <div className="bg-black opacity-30 w-full h-full absolute bottom-0 px-5"></div>
             <div className="absolute bottom-1 px-5">
@@ -38,7 +40,8 @@ export const Head = () => {
                   className="block w-full h-full"
                   src="/images/Body-3.avif"
                   alt="H1"
-                  width="200" height="192"
+                  width="381"
+                  height="256"
                 />
                 <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5"></div>
                 <div className="absolute bottom-1 px-5">
@@ -65,7 +68,8 @@ export const Head = () => {
                   className="block w-full h-full"
                   src="/images/Maximizing ROI on network equipment.avif"
                   alt="H1"
-                  width="204" height="192"
+                  width="381"
+                  height="256"
                 />
                 <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5"></div>
                 <div className="absolute bottom-1 px-5">

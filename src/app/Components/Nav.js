@@ -237,10 +237,10 @@ export const Nav = () => {
           {" "}
           <a
             href="https://www.networktigers.com/"
-            className="bg-red-600 text grid grid-flow-col text-center mx-5 md:text-sm hover:bg-gray-700 items-center text-white font-normal md:px-2 xl:px-3  md:py-1 xl:py-1 rounded"
+            className="aspect-ratio-container bg-red-600 text grid grid-flow-col text-center mx-5 md:text-sm hover:bg-gray-700 items-center text-white font-normal md:px-2 xl:px-3  md:py-1 xl:py-1 rounded"
           >
             <img
-              className="mr-1 pt-1 w-5 h-7 "
+              className="aspect-ratio-content mr-1  pt-1 w-5 h-7 "
               src="images/icons.avif"
               alt="shopping-cart"
             />
@@ -288,9 +288,9 @@ export const Nav = () => {
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
               </svg>
             </button>
-            <a  aria-label="logo" href="https://news.networktigers.com" className="">
+            <a  aria-label="logo" href="https://news.networktigers.com" className="aspect-ratio-container">
               <img
-                className="block w-full  h-5  bg-no-repeat bg-center bg-cover "
+                className="block aspect-ratio-content w-full  h-5  bg-no-repeat bg-center bg-cover "
                 src="/images/Logo.avif"
                 alt="H1"
               />
@@ -336,9 +336,9 @@ export const Nav = () => {
           <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" />
           <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
             <div className="flex items-center mb-8">
-            <a className="mr-auto text-3xl font-bold leading-none" href="/">
+            <a className="mr-auto text-3xl font-bold aspect-ratio-container leading-none" href="/">
   <img
-    className="block h-full w-48 bg-no-repeat bg-center bg-cover"
+    className="block h-full aspect-ratio-content w-48 bg-no-repeat bg-center bg-cover"
     src="/images/Logo.avif"
     alt="H1"
   />
