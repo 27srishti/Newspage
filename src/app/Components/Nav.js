@@ -144,7 +144,7 @@ export const Nav = () => {
       </header>
       {/******************************************** middle********************************************* */}
 
-      <header className="bg-white mb-4 grid justify-between px-10 hidden md:visible md:flex">
+     <header className="bg-white mb-4 grid justify-between px-10 hidden md:visible md:flex">
   <ul className="flex items-center">
     {/* Twitter icon */}
     <li className="px-1">
