@@ -6,7 +6,7 @@ const items = [
   {
     title: "Maximizing ROI on network equipment",
     readMore: "https://news.networktigers.com/industry-news/maximizing-roi-on-network-equipment/",
-    imageUrl: "images/Body-4.avif",
+    imageUrl: "/images/Body-4.avif",
     category: "Industry News",
     name: "Derek Walborn",
     date: "July 20, 2023",
@@ -53,7 +53,7 @@ const items = [
   {
     title: "Maximizing ROI on network equipment",
     readMore: "https://news.networktigers.com/industry-news/maximizing-roi-on-network-equipment/",
-    imageUrl: "images/Maximizing ROI on network equipment.avif",
+    imageUrl: "/images/Maximizing ROI on network equipment.avif",
     category: "Industry News",
     name: "Derek Walborn",
     date: "July 20, 2023",
@@ -105,13 +105,12 @@ export const Body = () => {
   
   return (
     
-    <section className="bg-white overflow-x-hidden  md:px-10 md:mt-10 cursor-pointer ">
-      <div className="container  mx-auto">
-        <div className="lg:flex  ">
+    <section className="bg-white overflow-x-hidden md:px-10 md:mt-10 cursor-pointer">
+      <div className="container mx-auto">
+        <div className="lg:flex">
           <div className="block lg:flex md:px-2 lg:p-0 mt-1 mb-10">
-            <div className="container mx-auto my-8 ">
-            <LoadMoreItems items={items} />
-            
+            <div className="container mx-auto my-8">
+            <LoadMoreItems items={items} /> {/* Pass the items array as a prop */}
             </div>
 
             {/* ***********************************right sidebar ************************************************* */}

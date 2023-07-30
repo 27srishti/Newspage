@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const ItemCard = ({ title, imageUrl, description, category, name, date, readMore }) => {
   return (
@@ -8,13 +9,15 @@ const ItemCard = ({ title, imageUrl, description, category, name, date, readMore
         href={readMore}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`Read more about ${title}`} // Add an accessible name to the link
+        aria-label={`Read more about ${title}`}
       >
-        <div>
-          <img
-            className="w-full h-80 object-cover lg:w-[30rem] lg:h-[15rem] md:w-full md:h-[15rem] rounded"
+        <div className="relative w-full h-80 lg:w-[30rem] lg:h-[15rem] md:w-full md:h-[15rem] rounded"> // Add relative class and set width and height
+          <Image
             src={imageUrl}
             alt={`Image for news item: ${title}`}
+            layout="fill" // Use fill layout
+            objectFit="cover" // Use cover object fit
+            quality={65} // Set quality
           />
         </div>
         <div className="bg-white rounded pl-5 lg:pl-5 md:pl-0 flex w-full flex-col justify-evenly leading-normal">
