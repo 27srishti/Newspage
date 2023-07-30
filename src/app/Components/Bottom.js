@@ -51,6 +51,8 @@ export const Bottom = () => {
     className="w-auto h-8 my-5"
     src="/images/Logo.avif"
     alt="Logo"
+    width={200}
+    height={200}
   />
   <span className="text-[0.90rem] text-gray-600 hover:text-blue-400">
     NetworkTigers, Inc.
