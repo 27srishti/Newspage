@@ -34,7 +34,7 @@ export const Footer = () => {
           </li>
           <li>
             <a href="https://www.networktigers.com/pages/cookie-policy" className="block py-3 px-4">
-              Cookie
+              Cookies
             </a>
           </li>
         </ul>
