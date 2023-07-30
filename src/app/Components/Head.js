@@ -6,11 +6,9 @@ export const Head = () => {
       <div className="aspect-auto md:col-span-1 md:flex md:mx-10 2xl:mx-0 w-auto">
         <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
           <img
-            className="block w-full md:w-[80rem] lg:w-[200rem] h-full md:h-[30rem]"
+            className="block w-full md:w-[80rem] lg:w-[200rem] h-full md:h-[30rem] object-cover object-center"
             src="/images/Head 1.avif"
             alt="H1"
-            width="204"
-            height="192"
             layout="responsive"
             loading="lazy"
           />
@@ -34,11 +32,9 @@ export const Head = () => {
           <div className="w-full md:px-1">
             <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
               <img
-                className="block w-full h-48 md:h-[15rem]"
+                className="block w-full h-48 md:h-[15rem] object-cover object-center"
                 src="/images/Body-3.avif"
                 alt="H1"
-                width="164" // Adjust these dimensions to the actual width and height of the image
-                height="192" // Adjust these dimensions to the actual width and height of the image
                 layout="responsive"
                 loading="lazy"
               />
@@ -61,11 +57,9 @@ export const Head = () => {
           <div className="w-full md:px-1">
             <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
               <img
-                className="block w-full md:h-[15rem] h-48"
+                className="block w-full md:h-[15rem] h-48 object-cover object-center"
                 src="/images/Maximizing ROI on network equipment.avif"
                 alt="H1"
-                width="164" // Adjust these dimensions to the actual width and height of the image
-                height="192" // Adjust these dimensions to the actual width and height of the image
                 layout="responsive"
                 loading="lazy"
               />
