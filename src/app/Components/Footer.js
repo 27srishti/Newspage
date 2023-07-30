@@ -7,7 +7,7 @@ export const Footer = () => {
         <span className="text-sm font-poppins text-gray-100 sm:text-center text-gray-100 hover:underline">
           © 2020{' '}
           <a href="https://news.networktigers.com/" className="hover:underline font-poppins px-1">
-            NetworkTigers, Inc.™
+            NetworkTigers, Inc.™ 
           </a>
         </span>
 
@@ -34,7 +34,7 @@ export const Footer = () => {
           </li>
           <li>
             <a href="https://www.networktigers.com/pages/cookie-policy" className="block py-3 px-4">
-              Cookies
+              Cookie
             </a>
           </li>
         </ul>
