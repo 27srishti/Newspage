@@ -47,13 +47,7 @@ export const Bottom = () => {
 
           <div className="grid grid-col w-full space-y-2">
           <a rel="noopener noreferrer" href="#" className="grid w-full">
-  <img
-    className="w-auto h-8 my-5"
-    src="/images/Logo.avif"
-    alt="Logo"
-    width={200}
-    height={200}
-  />
+  
   <span className="text-[0.90rem] text-gray-600 hover:text-blue-400">
     NetworkTigers, Inc.
   </span>
@@ -156,13 +150,7 @@ export const Bottom = () => {
           <div className="flex flex-col divide-y divide-gray-300">
             <div className="flex py-4 space-x-2">
               <a href="https://news.networktigers.com/opinion/fbi-cybersecurity-noteworthy-wins-and-losses/">
-                <img
-                  className="md:hidden lg:block object-cover rounded w-26 h-16"
-                  src="/images/FBI cybersecurity noteworthy wins and losses.avif"
-                  alt="FBI cybersecurity noteworthy wins and losses"
-                  width={104} // Replace with the actual width of the image in pixels
-                  height={64} // Replace with the actual height of the image in pixels
-                />
+                
               </a>
               <div className="flex flex-col flex-grow">
                 <a
@@ -177,13 +165,7 @@ export const Bottom = () => {
             </div>
             <div className="flex py-4 space-x-2">
               <a href="https://news.networktigers.com/opinion/ransomware-attacks-on-schools-are-surging/">
-                <img
-                  className="md:hidden lg:block object-cover rounded w-26 h-16"
-                  src="/images/Ransomware attacks on schools are surging.avif"
-                  alt="Ransomware attacks on schools are surging"
-                  width={104} // Replace with the actual width of the image in pixels
-                  height={64} // Replace with the actual height of the image in pixels
-                />
+                
               </a>
               <div className="flex flex-col flex-grow">
                 <a
@@ -198,13 +180,7 @@ export const Bottom = () => {
             </div>
             <div className="flex py-4 space-x-2">
               <a href="https://news.networktigers.com/opinion/what-are-pig-butchering-scams/">
-                <img
-                  className="md:hidden lg:block object-cover rounded w-[4.5rem] xl:w-20 h-16"
-                  src="/images/What are pig butchering scams.avif"
-                  alt="What are pig butchering scams?"
-                  width={72} // Replace with the actual width of the image in pixels
-                  height={64} // Replace with the actual height of the image in pixels
-                />
+                
               </a>
               <div className="flex flex-col flex-grow">
                 <a
@@ -219,13 +195,7 @@ export const Bottom = () => {
             </div>
             <div className="flex py-4 space-x-2">
               <a href="https://news.networktigers.com/opinion/understanding-access-point-options-mimo-vs-mu-mimo/">
-                <img
-                  className="md:hidden lg:block object-cover rounded w-26 h-16"
-                  src="/images/Understanding Access Point options.avif"
-                  alt="Understanding Access Point options: MIMO vs. MU-MIMO"
-                  width={104} // Replace with the actual width of the image in pixels
-                  height={64} // Replace with the actual height of the image in pixels
-                />
+                
               </a>
               <div className="flex flex-col flex-grow">
                 <a
@@ -258,13 +228,7 @@ export const Bottom = () => {
           <div className="flex flex-col divide-y divide-gray-300">
             <div className="flex py-4 space-x-2">
               <a href="/">
-                <img
-                  className=" md:hidden lg:block object-cover rounded w-26 h-16"
-                  src="/images/Maximizing ROI on network equipment.avif"
-                  alt="LN1"
-                  width={72} // Replace with the actual width of the image in pixels
-                  height={64} // Replace with the actual height of the image in pixels
-                />
+                
               </a>
 
               <div className="flex flex-col flex-grow">
@@ -280,13 +244,7 @@ export const Bottom = () => {
             </div>
             <div className="flex py-4 space-x-2">
               <a href="/">
-                <img
-                  className=" md:hidden lg:block object-cover rounded w-26 h-16"
-                  src="/images/Cybersecurity news weekly roundup July 17, 2023.avif"
-                  alt="LN2"
-                  width={72} // Replace with the actual width of the image in pixels
-                  height={64} // Replace with the actual height of the image in pixels
-                />
+               
               </a>
 
               <div className="flex flex-col flex-grow">
@@ -302,11 +260,7 @@ export const Bottom = () => {
             </div>
             <div className="flex py-4 space-x-2">
               <a href="/">
-                <img
-                  className=" md:hidden lg:block object-cover rounded w-32 h-16"
-                  src="/images/Understanding the role of switches in networking.avif"
-                  alt="LN3"
-                />
+               
               </a>
 
               <div className="flex flex-col flex-grow">
@@ -324,11 +278,7 @@ export const Bottom = () => {
             </div>
             <div className="flex py-4 space-x-2">
               <a href="/">
-                <img
-                  className=" md:hidden lg:block object-cover rounded w-36 h-16"
-                  src="/images/The importance of firewalls in securing your network.avif"
-                  alt="LN4"
-                />
+                
               </a>
 
               <div className="flex flex-col flex-grow">
