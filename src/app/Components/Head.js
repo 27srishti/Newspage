@@ -11,6 +11,7 @@ export const Head = () => {
             alt="H1"
             width="204"
             height="192"
+            loading="lazy"
           />
           <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5 "></div>
           <div className="absolute bottom-1 px-5">
@@ -37,6 +38,7 @@ export const Head = () => {
                 alt="H1"
                 width="164" // Adjust these dimensions to the actual width and height of the image
                 height="192" // Adjust these dimensions to the actual width and height of the image
+                loading="lazy"
               />
               <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5"></div>
               <div className="absolute bottom-1   px-5">
@@ -62,6 +64,7 @@ export const Head = () => {
                 alt="H1"
                 width="164" // Adjust these dimensions to the actual width and height of the image
                 height="192" // Adjust these dimensions to the actual width and height of the image
+                loading="lazy"
               />
               <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5"></div>
               <div className="absolute bottom-1 px-5">
