@@ -8,7 +8,7 @@ const items = [
     readMore:
       "https://news.networktigers.com/industry-news/importance-of-firewalls/",
     imageUrl:
-      "/images/Body-4.avif",
+      "/images/The importance of firewalls in securing your network.avif",
     category: "Industry News",
     name: "Derek Walborn ",
     date: "July 13, 2023",
