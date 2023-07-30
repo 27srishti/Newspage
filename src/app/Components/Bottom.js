@@ -149,9 +149,7 @@ export const Bottom = () => {
           </div>
           <div className="flex flex-col divide-y divide-gray-300">
             <div className="flex py-4 space-x-2">
-              <a href="https://news.networktigers.com/opinion/fbi-cybersecurity-noteworthy-wins-and-losses/">
-                
-              </a>
+              
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
@@ -164,9 +162,7 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a href="https://news.networktigers.com/opinion/ransomware-attacks-on-schools-are-surging/">
-                
-              </a>
+              
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
@@ -179,9 +175,7 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a href="https://news.networktigers.com/opinion/what-are-pig-butchering-scams/">
-                
-              </a>
+              
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
@@ -194,9 +188,7 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a href="https://news.networktigers.com/opinion/understanding-access-point-options-mimo-vs-mu-mimo/">
-                
-              </a>
+             
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
@@ -227,9 +219,7 @@ export const Bottom = () => {
           </div>
           <div className="flex flex-col divide-y divide-gray-300">
             <div className="flex py-4 space-x-2">
-              <a href="/">
-                
-              </a>
+              
 
               <div className="flex flex-col flex-grow">
                 <a
@@ -243,9 +233,7 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a href="/">
-               
-              </a>
+              
 
               <div className="flex flex-col flex-grow">
                 <a
@@ -259,9 +247,7 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a href="/">
-               
-              </a>
+              
 
               <div className="flex flex-col flex-grow">
                 <a
@@ -277,9 +263,7 @@ export const Bottom = () => {
               </div>
             </div>
             <div className="flex py-4 space-x-2">
-              <a href="/">
-                
-              </a>
+             
 
               <div className="flex flex-col flex-grow">
                 <a
