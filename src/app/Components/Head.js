@@ -9,8 +9,6 @@ export const Head = () => {
             className="block w-full md:w-[80rem] lg:w-[200rem] h-full md:h-[30rem]"
             src="/images/Head 1.avif"
             alt="H1"
-            width="204"
-            height="192"
             loading="lazy"
           />
           <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5 "></div>
@@ -36,8 +34,6 @@ export const Head = () => {
                 className="block w-full h-48 md:h-[15rem]"
                 src="/images/Body-3.avif"
                 alt="H1"
-                width="164" // Adjust these dimensions to the actual width and height of the image
-                height="192" // Adjust these dimensions to the actual width and height of the image
                 loading="lazy"
               />
               <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5"></div>
@@ -62,8 +58,6 @@ export const Head = () => {
                 className="block w-full md:h-[15rem] h-48"
                 src="/images/Maximizing ROI on network equipment.avif"
                 alt="H1"
-                width="164" // Adjust these dimensions to the actual width and height of the image
-                height="192" // Adjust these dimensions to the actual width and height of the image
                 loading="lazy"
               />
               <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5"></div>
