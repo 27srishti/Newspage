@@ -1,7 +1,6 @@
 // @client
-import React from "react";
-import LoadMoreItems from "../Components/loadMoreItems";
-import ItemCard from "../Components/ItemCard"; 
+import { useEffect, useState } from "react";
+import LoadMoreItems from "../Components/loadMoreItems"; 
 
 const items = [
   {
@@ -102,25 +101,17 @@ const items = [
 ];
 
 export const Body = () => {
+
+  
   return (
-    <section className="bg-white overflow-x-hidden  md:px-10  cursor-pointer ">
-      <div className="container py-5 mx-auto">
+    
+    <section className="bg-white overflow-x-hidden  md:px-10 md:mt-10 cursor-pointer ">
+      <div className="container  mx-auto">
         <div className="lg:flex  ">
-          <div className="block lg:flex md:px-2 lg:p-0 mt-10 mb-10">
+          <div className="block lg:flex md:px-2 lg:p-0 mt-1 mb-10">
             <div className="container mx-auto my-8 ">
-            {items.map((item, index) => (
-            <ItemCard
-                  key={index}
-                  title={item.title}
-                  imageUrl={item.imageUrl}
-                  category={item.category}
-                  name={item.name}
-                  date={item.date}
-                  description={item.description}
-                  readMore={item.readMore}
-                />
-              ))}
-              <LoadMoreItems items={items} />
+            <LoadMoreItems items={items} />
+            
             </div>
 
             {/* ***********************************right sidebar ************************************************* */}
@@ -314,6 +305,8 @@ export const Body = () => {
           </div>
         </div>
       </div>
+      
     </section>
+    
   );
 };

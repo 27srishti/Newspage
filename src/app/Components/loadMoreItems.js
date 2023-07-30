@@ -1,18 +1,26 @@
-"use client";
-// @client
-import { useState } from "react";
+// LoadMoreItems.js
+import React, { useState, useEffect } from "react";
 import ItemCard from "./ItemCard";
 
 const LoadMoreItems = ({ items }) => {
   const itemsPerPage = 4;
-  const [visibleItems, setVisibleItems] = useState(
-    items.slice(0, itemsPerPage)
-  );
+  const [visibleItems, setVisibleItems] = useState([]);
+
+  useEffect(() => {
+    // Ensure items is an array before slicing it
+    if (Array.isArray(items)) {
+      setVisibleItems(items.slice(0, itemsPerPage));
+    }
+  }, [items]);
 
   const handleLoadMore = () => {
     const nextIndex = visibleItems.length + itemsPerPage;
     setVisibleItems(items.slice(0, nextIndex));
   };
+
+  if (!Array.isArray(items)) {
+    return <p>No items to display.</p>;
+  }
 
   return (
     <div>
@@ -37,7 +45,6 @@ const LoadMoreItems = ({ items }) => {
         </button>
       )}
     </div>
-    
   );
 };
 

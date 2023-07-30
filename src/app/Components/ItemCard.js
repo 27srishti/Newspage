@@ -1,14 +1,6 @@
 import React from 'react';
 
-const ItemCard = ({
-  title,
-  imageUrl,
-  description,
-  category,
-  name,
-  date,
-  readMore,
-}) => {
+const ItemCard = ({ title, imageUrl, description, category, name, date, readMore }) => {
   return (
     <div className="w-full">
       <a
@@ -46,7 +38,6 @@ const ItemCard = ({
               className="px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 text-sm md:text-base text-center rounded text-black hover:text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
             >
               Read More <span className='sr-only '> -{title}</span>
-
             </a>
           </div>
         </div>

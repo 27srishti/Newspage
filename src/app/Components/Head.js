@@ -1,86 +1,90 @@
 import React from "react";
-
 export const Head = () => {
   return (
-    <div className="container mx-auto overflow-x-hidden mt-6">
-      <div className="flex flex-row flex-wrap">
-        <a className="w-full md:w-[69%] h-64 md:h-auto md:mb-4 mb-2">
-          <a href="/" className="relative">
-            <img
-              className="block w-full h-full md:h-full lg:h-[80%] xl:h-[84.5%] 2xl:h-[70.5%]"
-              src="/images/Head 1.avif"
-              alt="H1"
-            />
-            <div className="bg-black opacity-30 w-full h-full absolute bottom-0 px-5"></div>
-            <div className="absolute bottom-1 px-5">
-              <div className="bg-neutral-600 w-32 mb-2 hover:bg-yellow-300 hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
-                Opinion & Analysis
-              </div>
-              <div
-                href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/"
-                className="text-gray-100 font-bold text-xl md:text-3xl capitalize"
-              >
-                Could the Kronos hack have been prevented?
-              </div>
-              <div className="flex pb-3">
-                <div className="text-[0.75rem] text-white text-left py-1.5 font-medium">
-                  Derek Walborn - <span className="font-light">December 23, 2021</span>
-                </div>
+    <div className=" container mx-auto md:grid md:grid-row-1   mt-6">
+      <div className =" aspect-auto  md:col-span-1 md:flex md:mx-10 2xl:mx-0 w-auto ">
+       
+        <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative ">
+          <img
+            className="block w-full md:w-[80rem] lg:w-[200rem] h-full md:h-[30rem]"
+            src="/images/Head 1.avif"
+            alt="H1"
+            width="204"
+            height="192"
+          />
+          <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5 "></div>
+          <div className="absolute bottom-1 px-5">
+            <div className="bg-neutral-600 w-32 mb-2 hover:bg-yellow-300 hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
+              Opinion & Analysis
+            </div>
+            <div
+              href="/"
+              className="text-gray-100 font-bold text-sm md:text-xl capitalize"
+            >
+              Could the Kronos hack have been prevented?
+            </div>
+            <div className="flex pb-3">
+              <div className="text-[0.75rem] text-white text-left py-1.5 font-medium">
+                Derek Walborn -{" "}
+                <span className="font-light">December 23, 2021</span>
               </div>
             </div>
-          </a>
+          </div>
         </a>
-        <div className="w-full md:w-[31%] md:mb-4 md:px-2">
-          <div className="flex flex-row md:flex-col md:-mx-2">
-            <div className="w-full pr-2 md:w-full h-48 xl:h-64 md:mb-2 md:px-2">
-              <a href="/" className="relative">
+      
+       
+          <div className="  mt-1 md:mt-0 flex row-span-1 gap-1 md:grid md:grid-cols-1 mx-auto w-full  ">
+            <div className=" w-full md:px-1">
+              <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative ">
                 <img
-                  className="block w-full h-full"
+                  className="block w-full h-48 md:h-[15rem]"
                   src="/images/Body-3.avif"
                   alt="H1"
-                  width="200" height="192"
+                  
                 />
                 <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5"></div>
-                <div className="absolute bottom-1 px-5">
-                  <div className="bg-neutral-600 w-32 mb-2 hover:bg-yellow-300 hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
+                <div className="absolute bottom-1   px-5">
+                  <div className="bg-neutral-600  w-32 mb-2 hover:bg-yellow-300 hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
                     Opinion & Analysis
                   </div>
-                  <a
-                    href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/"
+                  <div
+                    href="/"
                     className="text-gray-100 font-bold text-sm md:text-xl capitalize"
                   >
                     Cybersecurity news weekly roundup
-                  </a>
+                  </div>
                   <div className="flex pb-3">
                     <div className="text-[0.75rem] text-white text-left py-1.5 font-medium">
-                      Derek Walborn - <span className="font-light">December 23, 2021</span>
+                      Derek Walborn -{" "}
+                      <span className="font-light">December 23, 2021</span>
                     </div>
                   </div>
                 </div>
               </a>
             </div>
-            <div className="w-full md:w-full h-48 xl:h-64 md:px-2">
-              <a href="/" className="relative">
+            <div className=" w-full md:px-1">
+              <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative ">
                 <img
-                  className="block w-full h-full"
+                  className="block  w-full md:h-[15rem] h-48"
                   src="/images/Maximizing ROI on network equipment.avif"
                   alt="H1"
-                  width="204" height="192"
+                  
                 />
                 <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5"></div>
                 <div className="absolute bottom-1 px-5">
                   <div className="bg-neutral-600 w-32 mb-2 hover:bg-yellow-300 hover:text-black px-2 py-1.5 text-center text-[0.65rem] md:text-[0.70rem] rounded text-white">
                     Opinion & Analysis
                   </div>
-                  <a
-                    href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/"
+                  <div
+                    href="/"
                     className="text-gray-100 font-bold text-sm md:text-xl capitalize"
                   >
                     Could the Kronos hack have been prevented?
-                  </a>
+                  </div>
                   <div className="flex pb-3">
                     <div className="text-[0.75rem] text-white text-left py-1.5 font-medium">
-                      Derek Walborn - <span className="font-light">December 23, 2021</span>
+                      Derek Walborn -{" "}
+                      <span className="font-light">December 23, 2021</span>
                     </div>
                   </div>
                 </div>
@@ -89,6 +93,6 @@ export const Head = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
