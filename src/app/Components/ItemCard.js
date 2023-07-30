@@ -11,7 +11,7 @@ const ItemCard = ({ title, imageUrl, description, category, name, date, readMore
         rel="noopener noreferrer"
         aria-label={`Read more about ${title}`}
       >
-        <div className="relative w-full h-80 lg:w-[30rem] lg:h-[15rem] md:w-full md:h-[15rem] rounded"> // Add relative class and set width and height
+        <div className="w-full h-80 object-cover lg:w-[30rem] lg:h-[15rem] md:w-full md:h-[15rem] rounded"> // Add relative class and set width and height
           <Image
             src={imageUrl}
             alt={`Image for news item: ${title}`}
