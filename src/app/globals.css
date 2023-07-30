@@ -17,7 +17,21 @@
 }
 
 
-.tap-target {
-  width: 280px; /* Adjust the width as needed */
-  padding: 8px; /* Adjust the padding as needed */
+.tap-target-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px; /* Set the minimum height for tap targets */
+  padding: 10px; /* Add padding for better tap area */
+  color: #374151; /* Adjust the color as needed */
+  text-decoration: none;
+}
+
+.tap-target-text {
+  flex-grow: 1; /* Ensure text takes up available space */
+  margin-right: 10px; /* Add space between text and count */
+}
+
+.tap-target-count {
+  color: #9ca3af; /* Adjust the color as needed */
 }
