@@ -3,7 +3,7 @@ import React from "react";
 export const Head = () => {
   return (
     <div className="container mx-auto md:grid md:grid-row-1 mt-6">
-      <div className="aspect-auto md:col-span-1 md:flex mx-10 2xl:mx-0 w-auto">
+      <div className="aspect-auto md:col-span-1 md:flex md:mx-10 2xl:mx-0 w-auto">
         <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
           <img
             className="block w-full md:w-[80rem] lg:w-[200rem] h-full md:h-[30rem]"
