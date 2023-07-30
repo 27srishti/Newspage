@@ -110,7 +110,7 @@ export const Body = () => {
         <div className="lg:flex">
           <div className="block lg:flex md:px-2 lg:p-0 mt-1 mb-10">
             <div className="container mx-auto my-8">
-            <LoadMoreItems items={items} /> {/* Pass the items array as a prop */}
+              <LoadMoreItems items={items} /> {/* Pass the items array as a prop */}
             </div>
 
             {/* ***********************************right sidebar ************************************************* */}
