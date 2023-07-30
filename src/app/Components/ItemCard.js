@@ -1,6 +1,14 @@
 import React from 'react';
 
-const ItemCard = ({ title, imageUrl, description, category, name, date, readMore }) => {
+const ItemCard = ({
+  title,
+  imageUrl,
+  description,
+  category,
+  name,
+  date,
+  readMore,
+}) => {
   return (
     <div className="w-full">
       <a
@@ -8,11 +16,11 @@ const ItemCard = ({ title, imageUrl, description, category, name, date, readMore
         href={readMore}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`Read more about ${title}`}
+        aria-label={`Read more about ${title}`} // Add an accessible name to the link
       >
         <div>
           <img
-            className="w-full h-80 object-cover lg:w-[30rem] lg:h-[15rem] md:w-full md:h-[15rem] rounded"
+            className="w-full h-80 md:w-full lg:w-[30rem] mb-5 md:mb-5 lg:mb-0 lg:h-[15rem] object-cover md:rounded"
             src={imageUrl}
             alt={`Image for news item: ${title}`}
           />
@@ -38,6 +46,7 @@ const ItemCard = ({ title, imageUrl, description, category, name, date, readMore
               className="px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 text-sm md:text-base text-center rounded text-black hover:text-white cursor-pointer bg-lime-600 hover:bg-neutral-700"
             >
               Read More <span className='sr-only '> -{title}</span>
+
             </a>
           </div>
         </div>
