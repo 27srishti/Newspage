@@ -1,4 +1,3 @@
-// LoadMoreItems.js
 import React, { useState, useEffect } from "react";
 import ItemCard from "./ItemCard";
 
