@@ -1,48 +1,58 @@
 // @client
 import { useEffect, useState } from "react";
-import LoadMoreItems from "../Components/loadMoreItems"; 
+import LoadMoreItems from "../Components/loadMoreItems";
 
 const items = [
   {
-    title: "Maximizing ROI on network equipment",
-    readMore: "https://news.networktigers.com/industry-news/maximizing-roi-on-network-equipment/",
-    imageUrl: "/images/Body-4.avif",
+    title: "The importance of firewalls in securing your network",
+    readMore:
+      "https://news.networktigers.com/industry-news/importance-of-firewalls/",
+    imageUrl:
+      "/images/The importance of firewalls in securing your network.avif",
     category: "Industry News",
-    name: "Derek Walborn",
-    date: "July 20, 2023",
+    name: "Derek Walborn ",
+    date: "July 13, 2023",
     description:
-      "NetworkTigers discusses maximizing ROI on Network Equipment by choosing the right solutions for your business. IT administrators must closely monitor their organizations' network traffic,...",
+      "NetworkTigers discussed the versatility and importance of firewalls. Despite being one of the oldest cybersecurity tools available, firewalls remain essential components of network protection. At...",
   },
   {
     title: "Cybersecurity news weekly roundup July 17, 2023",
-    readMore: "https://news.networktigers.com/cybersecurity-news/roundup-july-17-2023/",
+    readMore:
+      "https://news.networktigers.com/cybersecurity-news/roundup-july-17-2023/",
     imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn ",
     date: "uly 17, 2023",
     description:
-      "SAN MATEO, CA, July 17, 2023 — Cybersecurity news weekly roundup. Stories, news, politics, and events that impacted the network security industry last week. Brought to you..." },
+      "SAN MATEO, CA, July 17, 2023 — Cybersecurity news weekly roundup. Stories, news, politics, and events that impacted the network security industry last week. Brought to you...",
+  },
   {
     title: "Understanding the role of switches in networking",
-    readMore: "https://news.networktigers.com/industry-news/role-of-switches-in-networking/",
+    readMore:
+      "https://news.networktigers.com/industry-news/role-of-switches-in-networking/",
     imageUrl: "/images/Understanding the role of switches in networking.avif",
     category: "Industry News",
     name: "Gabrielle West",
     date: "July 15, 2023",
     description:
-      "NetworkTigers discusses the role of switches in networking. There are 2.5 quintillion bytes of data generated each day. Moreover, this rate has only increased in..."},
+      "NetworkTigers discusses the role of switches in networking. There are 2.5 quintillion bytes of data generated each day. Moreover, this rate has only increased in...",
+  },
   {
     title: "The importance of firewalls in securing your network",
-    readMore: "https://news.networktigers.com/industry-news/importance-of-firewalls/",
-    imageUrl: "/images/The importance of firewalls in securing your network.avif",
+    readMore:
+      "https://news.networktigers.com/industry-news/importance-of-firewalls/",
+    imageUrl:
+      "/images/The importance of firewalls in securing your network.avif",
     category: "Industry News",
     name: "Derek Walborn ",
     date: "July 13, 2023",
     description:
-     "NetworkTigers discussed the versatility and importance of firewalls. Despite being one of the oldest cybersecurity tools available, firewalls remain essential components of network protection. At..." },
+      "NetworkTigers discussed the versatility and importance of firewalls. Despite being one of the oldest cybersecurity tools available, firewalls remain essential components of network protection. At...",
+  },
   {
     title: "Cybersecurity news weekly roundup July 10, 2023",
-    readMore: "https://news.networktigers.com/networktigers-news/roundup-july-10-2023/",
+    readMore:
+      "https://news.networktigers.com/networktigers-news/roundup-july-10-2023/",
     imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn",
@@ -51,45 +61,55 @@ const items = [
       "SAN MATEO, CA, July 10, 2023 — Cybersecurity news week roundup. Stories, news, politics, and events that impacte the network security industry last week ",
   },
   {
-    title: "Maximizing ROI on network equipment",
-    readMore: "https://news.networktigers.com/industry-news/maximizing-roi-on-network-equipment/",
-    imageUrl: "/images/Maximizing ROI on network equipment.avif",
+    title: "The importance of firewalls in securing your network",
+    readMore:
+      "https://news.networktigers.com/industry-news/importance-of-firewalls/",
+    imageUrl:
+      "/images/The importance of firewalls in securing your network.avif",
     category: "Industry News",
-    name: "Derek Walborn",
-    date: "July 20, 2023",
+    name: "Derek Walborn ",
+    date: "July 13, 2023",
     description:
-      "NetworkTigers discusses maximizing ROI on Network Equipment by choosing the right solutions for your business. IT administrators must closely monitor their organizations' network traffic,...",
+      "NetworkTigers discussed the versatility and importance of firewalls. Despite being one of the oldest cybersecurity tools available, firewalls remain essential components of network protection. At...",
   },
   {
     title: "Cybersecurity news weekly roundup July 17, 2023",
-    readMore: "https://news.networktigers.com/cybersecurity-news/roundup-july-17-2023/",
+    readMore:
+      "https://news.networktigers.com/cybersecurity-news/roundup-july-17-2023/",
     imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn ",
     date: "uly 17, 2023",
     description:
-      "SAN MATEO, CA, July 17, 2023 — Cybersecurity news weekly roundup. Stories, news, politics, and events that impacted the network security industry last week. Brought to you..." },
+      "SAN MATEO, CA, July 17, 2023 — Cybersecurity news weekly roundup. Stories, news, politics, and events that impacted the network security industry last week. Brought to you...",
+  },
   {
     title: "Understanding the role of switches in networking",
-    readMore: "https://news.networktigers.com/industry-news/role-of-switches-in-networking/",
+    readMore:
+      "https://news.networktigers.com/industry-news/role-of-switches-in-networking/",
     imageUrl: "/images/Understanding the role of switches in networking.avif",
     category: "Industry News",
     name: "Gabrielle West",
     date: "July 15, 2023",
     description:
-      "NetworkTigers discusses the role of switches in networking. There are 2.5 quintillion bytes of data generated each day. Moreover, this rate has only increased in..."},
+      "NetworkTigers discusses the role of switches in networking. There are 2.5 quintillion bytes of data generated each day. Moreover, this rate has only increased in...",
+  },
   {
     title: "The importance of firewalls in securing your network",
-    readMore: "https://news.networktigers.com/industry-news/importance-of-firewalls/",
-    imageUrl: "/images/The importance of firewalls in securing your network.avif",
+    readMore:
+      "https://news.networktigers.com/industry-news/importance-of-firewalls/",
+    imageUrl:
+      "/images/The importance of firewalls in securing your network.avif",
     category: "Industry News",
     name: "Derek Walborn ",
     date: "July 13, 2023",
     description:
-     "NetworkTigers discussed the versatility and importance of firewalls. Despite being one of the oldest cybersecurity tools available, firewalls remain essential components of network protection. At..." },
+      "NetworkTigers discussed the versatility and importance of firewalls. Despite being one of the oldest cybersecurity tools available, firewalls remain essential components of network protection. At...",
+  },
   {
     title: "Cybersecurity news weekly roundup July 10, 2023",
-    readMore: "https://news.networktigers.com/networktigers-news/roundup-july-10-2023/",
+    readMore:
+      "https://news.networktigers.com/networktigers-news/roundup-july-10-2023/",
     imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn",
@@ -101,16 +121,14 @@ const items = [
 ];
 
 export const Body = () => {
-
-  
   return (
-    
     <section className="bg-white overflow-x-hidden md:px-10 md:mt-10 cursor-pointer">
       <div className="container mx-auto">
         <div className="lg:flex">
           <div className="block lg:flex md:px-2 lg:p-0 mt-1 mb-10">
             <div className="container mx-auto my-8">
-              <LoadMoreItems items={items} /> {/* Pass the items array as a prop */}
+              <LoadMoreItems items={items} />{" "}
+              {/* Pass the items array as a prop */}
             </div>
 
             {/* ***********************************right sidebar ************************************************* */}
@@ -304,8 +322,6 @@ export const Body = () => {
           </div>
         </div>
       </div>
-      
     </section>
-    
   );
 };
