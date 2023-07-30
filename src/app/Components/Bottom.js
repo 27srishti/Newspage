@@ -46,19 +46,20 @@ export const Bottom = () => {
           </div>
 
           <div className="grid grid-col w-full space-y-2">
-            <a rel="noopener noreferrer" href="#" className="grid  w-full">
-              <img
-                className="w-80 h-8 my-5"
-                src="/images/Logo.avif"
-                alt="Logo"
-              />
-              <span className="text-[0.90rem]  text-gray-600 hover:text-blue-400">
-                NetworkTigers, Inc.
-              </span>
-              <span className="text-[0.90rem]  text-gray-600 hover:text-blue-400 mb-2">
-                1029 S. Claremont St. San Mateo, CA 94402
-              </span>
-            </a>
+          <a rel="noopener noreferrer" href="#" className="grid w-full">
+  <img
+    className="w-auto h-8 my-5"
+    src="/images/Logo.avif"
+    alt="Logo"
+  />
+  <span className="text-[0.90rem] text-gray-600 hover:text-blue-400">
+    NetworkTigers, Inc.
+  </span>
+  <span className="text-[0.90rem] text-gray-600 hover:text-blue-400 mb-2">
+    1029 S. Claremont St. San Mateo, CA 94402
+  </span>
+</a>
+
             <ul className="flex items-center  lg:mr-6 xl:mr-8">
               <li className="p-1">
                 <a
