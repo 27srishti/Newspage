@@ -12,7 +12,7 @@ const ItemCard = ({ title, imageUrl, description, category, name, date, readMore
       >
         <div>
           <img
-            className="w-full h-80 md:w-full lg:w-[30rem] mb-5 md:mb-5 lg:mb-0 lg:h-[15rem] object-cover md:rounded"
+            className="w-full h-80 object-cover lg:w-[30rem] lg:h-[15rem] md:w-full md:h-[15rem] rounded"
             src={imageUrl}
             alt={`Image for news item: ${title}`}
           />
