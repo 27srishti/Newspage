@@ -151,7 +151,7 @@ export const Body = () => {
                   Opinion & Analysis
                 </div>
                 <div className="mx-2 text-[0.75rem] text-left py-1.5 font-medium">
-                  Derek Walborn -{" "}
+                  Derek Walborn -
                   <span className="font-light">December 23, 2021</span>
                 </div>
               </div>
