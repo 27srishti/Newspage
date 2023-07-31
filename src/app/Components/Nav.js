@@ -196,7 +196,7 @@ export const Nav = () => {
         </svg>
       </a>
     </li>
-    {/* LinkedIn icon */}
+    {/* LinkedIn icon*/}
     <li className="p-1 mr-3">
       <a
         aria-label="LinkedIn"
