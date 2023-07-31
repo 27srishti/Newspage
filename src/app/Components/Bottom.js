@@ -47,7 +47,9 @@ export const Bottom = () => {
 
           <div className="grid grid-col w-full space-y-2">
             <a rel="noopener noreferrer" href="#" className="grid w-full">
-              <img src="/images/Logo.avif" width="full" height="full" ></img>
+              <img src="/images/Logo.avif" width="full" height="full" alt="logo"
+                layout="responsive"
+                loading="lazy"></img>
               <span className="text-[0.90rem] mt-5 text-gray-600 hover:text-blue-400">
                 NetworkTigers, Inc.
               </span>
