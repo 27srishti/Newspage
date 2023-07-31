@@ -122,7 +122,7 @@ const items = [
 
 export const Body = () => {
   return (
-    <section className="bg-white overflow-x-hidden md:px-10 md:mt-10 cursor-pointer">
+    <section className="bg-white overflow-x-hidden md:px-10 mt-56 md:mt-10 cursor-pointer">
       <div className="container mx-auto">
         <div className="lg:flex">
           <div className="block lg:flex md:px-2 lg:p-0 mt-1 mb-10">

@@ -2,8 +2,8 @@ import React from "react";
 
 export const Head = () => {
   return (
-    <div className="container mx-auto md:grid md:grid-row-1 mt-6">
-      <div className="aspect-auto md:col-span-1 md:flex md:mx-10 2xl:mx-0 w-auto">
+    <div className="container  mt-1 md:mt-0 flex row-span-1 gap-1 md:grid md:grid-cols-1 mx-auto w-full">
+      <div className="aspect-auto md:mx-10 2xl:mx-0 w-auto">
         <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
           <img
             className="block w-full md:w-[80rem] lg:w-[200rem] h-full md:h-[30rem] object-cover object-center"
@@ -28,8 +28,8 @@ export const Head = () => {
           </div>
         </a>
 
-        <div className="mt-1 md:mt-0 flex row-span-1 gap-1 md:grid md:grid-cols-1 mx-auto w-full">
-          <div className="w-full md:px-1">
+        <div className=" flex mt-1 gap-1">
+          <div className="w-full ">
             <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
               <img
                 className="block w-full h-48 md:h-[15rem] object-cover object-center"
@@ -54,7 +54,7 @@ export const Head = () => {
               </div>
             </a>
           </div>
-          <div className="w-full md:px-1">
+          <div className="w-full ">
             <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
               <img
                 className="block w-full md:h-[15rem] h-48 object-cover object-center"
