@@ -10,7 +10,7 @@ export const Head = () => {
             src="/images/Head 1.avif"
             alt="H1"
             layout="responsive"
-            loading="lazy"
+            
           />
           <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5 "></div>
           <div className="absolute bottom-1 px-5">
@@ -36,7 +36,7 @@ export const Head = () => {
                 src="/images/Body-3.avif"
                 alt="H1"
                 layout="responsive"
-                loading="lazy"
+              
               />
               <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5"></div>
               <div className="absolute bottom-1 px-5">
@@ -61,7 +61,7 @@ export const Head = () => {
                 src="/images/Maximizing ROI on network equipment.avif"
                 alt="H1"
                 layout="responsive"
-                loading="lazy"
+              
               />
               <div className="bg-black opacity-50 w-full h-full absolute bottom-0 px-5"></div>
               <div className="absolute bottom-1 px-5">
