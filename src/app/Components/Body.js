@@ -130,7 +130,6 @@ export const Body = () => {
               <LoadMoreItems items={items} />{" "}
               {/* Pass the items array as a prop */}
             </div>
-
             {/* ***********************************right sidebar ************************************************* */}
           </div>
 
