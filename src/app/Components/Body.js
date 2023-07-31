@@ -122,17 +122,7 @@ const items = [
 
 
 export const Body = () => {
-  const [visibleItems, setVisibleItems] = useState([]);
-
-  useEffect(() => {
-    setVisibleItems(items.slice(0, itemsPerPage));
-  }, []);
-
-  const handleLoadMore = () => {
-    const nextIndex = visibleItems.length + itemsPerPage;
-    setVisibleItems(items.slice(0, nextIndex));
-  };
-
+ 
   const itemsPerPage = 4;
   return (
     <section className="bg-white overflow-x-hidden md:px-10  md:mt-10 cursor-pointer">
