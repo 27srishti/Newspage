@@ -223,7 +223,7 @@ export const Nav = () => {
     </li>
     <li className="md:hidden lg:flex item-center text-xs font-normal">
       {" "}
-      Wednesday, July 26, 2023 {/* <Date/> */}
+      Monday, July 31, 2023 {/* <Date/> */}
     </li>
   </ul>
   <a href="https://news.networktigers.com" className="flex-shrink-0 flex items-center">
@@ -235,17 +235,20 @@ export const Nav = () => {
   </a>
   <div className="flex items-center">
     {/* Store link with shopping-cart icon */}
+    
     <a
-      href="https://www.networktigers.com/"
-      className="bg-red-600 text grid grid-flow-col text-center mx-5 md:text-sm hover:bg-gray-700 items-center text-white font-normal md:px-2 xl:px-3 md:py-1 xl:py-1 rounded"
-    >
-      <img
-        className="mr-1 pt-1 w-5 h-7"
-        src="images/icons.avif"
-        alt="shopping-cart"
-      />
-      Store
-    </a>{" "}
+  href="https://www.networktigers.com/"
+  className="bg-red-600 text grid grid-flow-col text-center mx-5 md:text-sm hover:bg-gray-700 items-center text-white font-normal md:px-2 xl:px-3 md:py-1 xl:py-1 rounded"
+>
+  <div class="aspect-ratio-square">
+    <img
+      src="images/icons.avif"
+      alt="shopping-cart"
+    />
+  </div>
+  Store
+</a>
+
     <a aria-label="search" href="https://news.networktigers.com" className="text-lime-900 flex cursor-pointer">
       <div className="px-2 text-base font-medium">Search</div>
       <svg
