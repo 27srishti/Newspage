@@ -7,7 +7,7 @@ export const Head = () => {
         <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
           <img
             className="block w-full md:w-[80rem] lg:w-[200rem] md:h-[30rem] object-cover object-center"
-            src="/images/Ransomware attacks on schools are surging.avif"
+            src="/images/Body-3.avif"
             alt="H1"
             layout="responsive"
             loading="lazy"
@@ -58,7 +58,7 @@ export const Head = () => {
             <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
               <img
                 className="block w-full md:h-[15rem] h-48 object-cover object-center"
-                src="/images/Maximizing ROI on network equipment.avif"
+                src="/images/Body-3.avif"
                 alt="H1"
                 layout="responsive"
                 loading="lazy"
