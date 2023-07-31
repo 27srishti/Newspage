@@ -2,7 +2,7 @@ import React from "react";
 
 export const Head = () => {
   return (
-    <div className="container  justify-center mt-2 md:mt-5 flex row-span-1 gap-1 md:grid md:grid-cols-1 mx-auto w-full">
+    <div className="container  justify-center mt-2 md:mt-5 flex row-span-1 gap-1  mx-auto w-full">
       <div className="aspect-auto md:mx-10 2xl:mx-0 w-auto">
         <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative ">
           <img
