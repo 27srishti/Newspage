@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ItemCard = ({
-  
   title,
   imageUrl,
   description,
@@ -13,23 +12,22 @@ const ItemCard = ({
   return (
     <div className="w-full">
       <a
-        className="block rounded w-full md:flex mb-10"
+        className="block rounded w-full lg:flex mb-10"
         href={readMore}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`Read more about ${title}`} // Add an accessible name to the link
       >
-       
-        <div>
+        <div >
           <img
-            className="px-5 md:px-0 w-full h-36 md:h-full md:w-[30rem]  mb-5 md:mb-5 lg:mb-0 object-cover md:rounded"
+            className="w-full h-80 md:w-full lg:w-[30rem]  mb-5 md:mb-5 lg:mb-0 object-cover md:rounded"
             src={imageUrl}
             alt={`Image for news item: ${title}`}
             layout ="responsive"
-            loading='lazy'
+            
           />
         </div>
-        <div className="bg-white rounded pl-5 md:pl-5  flex w-full flex-col justify-evenly leading-normal">
+        <div className="bg-white rounded pl-5 lg:pl-5 md:pl-0 flex w-full flex-col justify-evenly leading-normal">
           <div>
             <h2 className="mt-3 lg:mt-0 hover:text-lime-600 text-gray-700 font-bold text-2xl mb-2">
               {title}
