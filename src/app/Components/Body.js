@@ -19,7 +19,7 @@ const items = [
     title: "Cybersecurity news weekly roundup July 17, 2023",
     readMore:
       "https://news.networktigers.com/cybersecurity-news/roundup-july-17-2023/",
-    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
+    imageUrl: "/images/What are pig butchering scams.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn ",
     date: "uly 17, 2023",
@@ -53,7 +53,7 @@ const items = [
     title: "Cybersecurity news weekly roundup July 10, 2023",
     readMore:
       "https://news.networktigers.com/networktigers-news/roundup-july-10-2023/",
-    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
+    imageUrl: "/images/What are pig butchering scams.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn",
     date: " July 10, 2023",
@@ -76,7 +76,7 @@ const items = [
     title: "Cybersecurity news weekly roundup July 17, 2023",
     readMore:
       "https://news.networktigers.com/cybersecurity-news/roundup-july-17-2023/",
-    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
+    imageUrl: "/images/What are pig butchering scams.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn ",
     date: "uly 17, 2023",
@@ -110,7 +110,7 @@ const items = [
     title: "Cybersecurity news weekly roundup July 10, 2023",
     readMore:
       "https://news.networktigers.com/networktigers-news/roundup-july-10-2023/",
-    imageUrl: "/images/Cybersecurity news weekly roundup July 17, 2023.avif",
+    imageUrl: "/images/What are pig butchering scams.avif",
     category: "Cybersecurity News",
     name: " Derek Walborn",
     date: " July 10, 2023",
