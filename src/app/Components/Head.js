@@ -2,12 +2,12 @@ import React from "react";
 
 export const Head = () => {
   return (
-    <div className="container mt-2 md:mt-5 flex row-span-1 gap-1 md:grid md:grid-cols-1 mx-auto w-full">
+    <div className="container  justify-center mt-2 md:mt-5 flex row-span-1 gap-1 md:grid md:grid-cols-1 mx-auto w-full">
       <div className="aspect-auto md:mx-10 2xl:mx-0 w-auto">
-        <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
+        <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative ">
           <img
-            className="block w-full md:w-[80rem] lg:w-[200rem] md:h-[30rem] object-cover object-center"
-            src="/images/Body-3.avif"
+            className="block w-full h-[15rem]  md:w-[80rem] lg:w-[200rem] md:h-[20rem] lg:h-[30rem] object-cover object-center"
+            src="/images/Head 1 .avif"
             alt="H1"
             layout="responsive"
             loading="lazy"
@@ -58,7 +58,7 @@ export const Head = () => {
             <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
               <img
                 className="block w-full md:h-[15rem] h-48 object-cover object-center"
-                src="/images/Body-3.avif"
+                src="/images/Maximizing ROI on network equipment.avif"
                 alt="H1"
                 layout="responsive"
                 loading="lazy"
