@@ -7,7 +7,7 @@ export const Head = () => {
         <a href="https://news.networktigers.com/opinion/could-the-kronos-hack-have-been-prevented/" className="relative">
           <img
             className="block w-full  md:w-[80rem] lg:w-[200rem]  md:h-[30rem] object-cover object-center"
-            src="/images/Head 1.avif"
+            src="/images/Head 1 .avif"
             alt="H1"
             layout="responsive"
             loading="lazy"
