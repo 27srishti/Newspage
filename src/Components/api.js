@@ -5,7 +5,7 @@ const apiUrl = process.env.NEXT_PUBLIC_WORDPRESS_SIIE_URL;
 
 export async function fetchBlogPosts() {
   try {
-    const response = await axios.get(`https://staging-de34-newsnetworktigers.wpcomstaging.com/wp-json/wp/v2/posts?_embed&order=desc&per_page=100&status=publish`);
+    const response = await axios.get(`https://news.networktigers.com/wp-json/wp/v2/posts?_embed&order=desc&per_page=100&status=publish`);
     //  const response = await axios.get(`${apiUrl}/wp-json/wp/v2/posts?_embed&order=desc&per_page=${limit}&status=publish
     return response.data;
   } catch (error) {

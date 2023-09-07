@@ -35,7 +35,6 @@ async function getAuthor(authorId) {
   return data.name || "Unknown Author";
 }
 
-console.log("posts", getBlogs);
 const Blogs = ({ blogPosts, authors, categories }) => {
   const [visible, setVisible] = useState(5);
 
@@ -49,9 +48,9 @@ const Blogs = ({ blogPosts, authors, categories }) => {
           <div className="block lg:flex md:px-2 lg:p-0 mt-1 mb-10">
             <div className="container  mx-auto my-8">
               <div className="w-full">
-                {blogPosts.slice(0, visible).map((post, index) => {
-                  const authorName = authors[index] || "Unknown Author";
-                  const categoryName = categories[index] || "Unknown Category";
+                {blogPosts.slice(3, visible + 3).map((post, index) => {
+                   const authorName = authors && authors[index] ? authors[index] : "Unknown Author";
+                   const categoryName = categories && categories[index] ? categories[index] : "Unknown Category";
 
                   return (
                     <div
@@ -130,6 +129,7 @@ const Blogs = ({ blogPosts, authors, categories }) => {
                 )}
               </div>
             </div>
+            {/* ---------------------------------------------------------------------------------------------- */}
             <div className="mt-8 xl:w-2/4 lg:mt-0 px-5 ">
               <div className=" bg-lime-600 w-40 px-2 font-bold py-1.5 text-center text-sm text-black">
                 Whats Popular ?

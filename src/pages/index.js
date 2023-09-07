@@ -1,13 +1,8 @@
 import Hero from "../Components/Hero";
 import Body from "../Components/Body";
 import Nav from "../Components/Nav";
-import {
-  fetchBlogPosts,
- 
-  fetchCategories,
-  fetchFeaturedCategory,
-  fetchAuthor,
-} from "@/Components/api";
+import { useState } from "react";
+import { fetchBlogPosts, fetchFeaturedCategory } from "@/Components/api";
 import Bottom from "../Components/Bottom";
 import Footer from "@/Components/Footer";
 
@@ -36,7 +31,7 @@ async function getFeaturedBlogPost(categoryId) {
 async function getRecentBlogPosts() {
   try {
     const response = await fetch(
-      "https://staging-de34-newsnetworktigers.wpcomstaging.com/wp-json/wp/v2/posts?_embed&order=desc&per_page=4&status=publish"
+      "https://news.networktigers.com/wp-json/wp/v2/posts?_embed&order=desc&per_page=4&status=publish"
     );
 
     if (!response.ok) {
@@ -50,6 +45,29 @@ async function getRecentBlogPosts() {
     return [];
   }
 }
+async function getCategories(categoryN) {
+  const res = await fetch(
+    `https://news.networktigers.com/wp-json/wp/v2/categories/${categoryN}`,
+    { Cache: "no-store" }
+  );
+  if (!res.ok) {
+    return "Unknown Category";
+  }
+  const data = await res.json();
+  return data.name || "Unknown Category";
+}
+async function getAuthor(authorId) {
+  const res = await fetch(
+    `https://news.networktigers.com/wp-json/wp/v2/users/${authorId}`,
+    { Cache: "no-store" }
+  );
+  if (!res.ok) {
+    return "Unknown Author";
+  }
+  const data = await res.json();
+  return data.name || "Unknown Author";
+}
+
 function index({
   heroProps,
   blogProps,
@@ -57,23 +75,33 @@ function index({
   category,
   featuredPost,
   recentPosts,
+  authors,
+  categories,
+  recentAuthors,
+  recenCatogory,
 }) {
   return (
     <div>
       <Nav {...navProps} />
-      <Hero {...heroProps} />
-      <Body {...blogProps} />
+      <Hero
+        recentBlogs={heroProps.recentBlogs}
+        recentAuthors={recentAuthors}
+        recenCatogory={recenCatogory}
+      />
+      <Body
+        blogPosts={blogProps.blogPosts}
+        authors={authors}
+        categories={categories}
+      />
       <Bottom
         category={category}
         featuredPost={featuredPost}
         recentPosts={recentPosts}
       />{" "}
-      {/* Render the Bottom component with its props */}
       <Footer />
     </div>
   );
 }
-
 export async function getServerSideProps() {
   try {
     const navPosts = await fetchBlogPosts();
@@ -82,36 +110,50 @@ export async function getServerSideProps() {
       .map((post) => post.title.rendered);
 
     const heroData = await fetchBlogPosts();
-
     const blogData = await fetchBlogPosts();
     const featuredCategory = await fetchFeaturedCategory();
-    console.log("Featured Category:", featuredCategory);
-    
+
     let featuredPost = null;
     let recentPosts = [];
-    
+    let recentAuthors = [];
+    let recenCatogory = [];
+    let authors = [];
+    let categories = [];
     if (featuredCategory) {
       featuredPost = await getFeaturedBlogPost(featuredCategory.id);
       recentPosts = await getRecentBlogPosts();
+      recentAuthors = await Promise.all(
+        heroData.map((post) => getAuthor(post.author))
+      );
+      recenCatogory = await Promise.all(
+        heroData.map((post) => getCategories(post.categories[1]))
+      );
+      authors = await Promise.all(
+        blogData.map((post) => getAuthor(post.author))
+      );
+      categories = await Promise.all(
+        blogData.map((post) => getCategories(post.categories[1]))
+      );
     }
+    console.log(authors);
     return {
       props: {
         heroProps: {
           recentBlogs: heroData,
-          recentAuthors: [],
-          recenCatogory: [],
         },
         blogProps: {
           blogPosts: blogData,
-          authors: [],
-          categories: [],
         },
         navProps: {
           sentences: initialSentences,
         },
-        category: featuredCategory || null, // Pass category prop
-        featuredPost, // Pass featuredPost prop
-        recentPosts, // Pass recentPosts prop
+        category: featuredCategory || null,
+        featuredPost,
+        recentPosts,
+        recentAuthors,
+        recenCatogory,
+        authors, // Pass authors as a prop
+        categories, // Pass categories as a prop
       },
     };
   } catch (error) {
@@ -123,7 +165,6 @@ export async function getServerSideProps() {
 }
 
 export default index;
-
 //--------------------------------------------------------------------------------------------------------------------------------
 
 //hero
@@ -491,7 +532,7 @@ export default index;
 // async function getArticlesCount() {
 //   try {
 //     const response = await fetch(
-//       `https://staging-de34-newsnetworktigers.wpcomstaging.com/wp-json/wp/v2/categories?_embed&per_page=8 `
+//       `https://news.networktigers.com/wp-json/wp/v2/categories?_embed&per_page=8 `
 //     );
 
 //     if (!response.ok) {
@@ -574,7 +615,7 @@ export default index;
 // async function getRecentBlogPosts() {
 //   try {
 //     const response = await fetch(
-//       "https://staging-de34-newsnetworktigers.wpcomstaging.com/wp-json/wp/v2/posts?_embed&order=desc&per_page=4&status=publish"
+//       "https://news.networktigers.com/wp-json/wp/v2/posts?_embed&order=desc&per_page=4&status=publish"
 //     );
 
 //     if (!response.ok) {

@@ -58,7 +58,7 @@ function truncateText(text, maxWords) {
 async function getRecentBlogPosts() {
   try {
     const response = await fetch(
-      "https://staging-de34-newsnetworktigers.wpcomstaging.com/wp-json/wp/v2/posts?_embed&order=desc&per_page=4&status=publish"
+      "https://news.networktigers.com/wp-json/wp/v2/posts?_embed&order=desc&per_page=4&status=publish"
     );
 
     if (!response.ok) {
@@ -75,7 +75,7 @@ async function getRecentBlogPosts() {
 async function getArticlesCount() {
   try {
     const response = await fetch(
-      `https://staging-de34-newsnetworktigers.wpcomstaging.com/wp-json/wp/v2/categories?_embed&per_page=8 `
+      `https://news.networktigers.com/wp-json/wp/v2/categories?_embed&per_page=8 `
     );
 
     if (!response.ok) {
@@ -90,7 +90,7 @@ async function getArticlesCount() {
   }
 }
 const Bottom = ({ featuredPost, recentPosts }) => {
-    const [articlesCount, setArticlesCount] = useState([]);
+  const [articlesCount, setArticlesCount] = useState([]);
 
   useEffect(() => {
     getArticlesCount().then((articles) => {
@@ -101,7 +101,6 @@ const Bottom = ({ featuredPost, recentPosts }) => {
     <section className="px-5 md:px-10 py-10 mx-auto overflow-x-hidden font-poppins bg-gray-200">
       <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-12">
         {/* ----------------------------------------------------------------------------1st-------------------------------------------------------------------------------------------------------------------- */}
-        
         <div className="flex flex-col justify-evenly xl:col-span-3 md:col-span-4 col-span-12 py-2 space-y-8  ">
           <div className="flex flex-col space-y-10 md:space-y-2">
             <div className="flex flex-col  md:w-auto md:space-y-1 space-y-5">
@@ -130,7 +129,7 @@ const Bottom = ({ featuredPost, recentPosts }) => {
                     {featuredPost.title.rendered}
                   </div>
                   <div
-                    className="text-[0.90rem] mb-10  md:text-sm md:pb-5 text-gray-600 hover:text-blue-400"
+                    className="text-[0.90rem] mb-3  md:text-sm md:pb-5 text-gray-600 hover:text-blue-400"
                     dangerouslySetInnerHTML={{
                       __html: truncateText(featuredPost.excerpt.rendered, 20),
                     }}
@@ -141,7 +140,7 @@ const Bottom = ({ featuredPost, recentPosts }) => {
               )}{" "}
               <div
                 href="https://medium.com/authority-magazine/homes-of-the-future-with-mike-syiek-of-networktigers-cde4326a170f"
-                className=" px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 text-sm md:text-base  text-center rounded text-white hover:bg-lime-600 bg-neutral-700"
+                className=" px-1 py-2 w-24 md:px-2 md:py-2 md:w-28 cursor-pointer text-sm md:text-base  text-center rounded text-white hover:bg-lime-600 bg-neutral-700"
               >
                 Read More
               </div>
@@ -243,65 +242,22 @@ const Bottom = ({ featuredPost, recentPosts }) => {
           </div>
         </div>{" "}
         {/* ----------------------------------------------------------------------------2nd-------------------------------------------------------------------------------------------------------------------- */}
-        
-        <div className="hidden pt-10 xl:col-span-3  md:col-span-4 md:block lg:block">
-          <div className="relative flex items-center  mb-3 text-gray-600  cursor-pointer  hover:text-blue-500">
-            <div className="relative ">
-              <div className="absolute bottom-0 text-center inline-block w-36  xl:w-36 px-4 py-2   text-white font-medium bg-blue-900 rounded">
-                <span className="inline-block text-sm text-center leading-tight">
-                  Latest News
-                </span>
-                <span
-                  className="absolute bottom-0 right-0 w-3 h-3  -mb-1 transform rotate-45 bg-blue-900"
-                  style={{ left: "50%" }}
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col divide-y divide-gray-300">
-            <div className="flex py-4 space-x-2">
-              <div className="flex flex-col flex-grow">
-                {recentPosts.map((post) => (
-                  <div
-                    rel="noopener noreferrer"
-                    href="https://news.networktigers.com/industry-news/maximizing-roi-on-network-equipment/"
-                    className="font-poppins hover:underline"
-                    key={post.id}
-                  >
-                    {post.title.rendered}
-
-                    <p className="mt-auto text-xs text-gray-600">
-                      Date:{" "}
-                      {new Date(post.date).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* -------------------------------------------------------------------3rd--------------------------------------------------------------------------------------- */}
         <div className="hidden pt-10 xl:col-span-3 md:col-span-4 md:block lg:block">
           <div className="relative flex items-center  mb-3 text-gray-600 hover:text-blue-400 cursor-pointer  ">
             <div className="relative ">
-              <div className="absolute bottom-0 text-center inline-block w-36  xl:w-36 px-4 py-2   text-white font-medium bg-blue-900 rounded">
+              <div className="absolute bottom-0 text-center inline-block w-36  xl:w-36 px-4 py-2   text-white font-medium bg-gray-700 rounded">
                 <span className="inline-block text-sm text-center leading-tight">
-                  Latest News
+                Editors pick
                 </span>
                 <span
-                  className="absolute bottom-0 right-0 w-3 h-3  -mb-1 transform rotate-45 bg-blue-900"
+                  className="absolute bottom-0 right-0 w-3 h-3  -mb-1 transform rotate-45 bg-gray-700"
                   style={{ left: "50%" }}
                 />
               </div>
             </div>
           </div>
-          <div className="flex flex-col divide-y divide-gray-300">
-            <div className="flex py-4 space-x-2">
+          <div className="flex flex-col ">
+            <div className="flex py-3 space-x-2">
               <div className="flex flex-col flex-grow">
                 <a
                   rel="noopener noreferrer"
@@ -310,7 +266,7 @@ const Bottom = ({ featuredPost, recentPosts }) => {
                 >
                   Maximizing ROI on network equipment
                 </a>
-                <p className="mt-auto text-xs text-gray-600">July 20, 2023</p>
+                <div className="mt-auto text-xs text-gray-600">July 20, 2023</div>
               </div>
             </div>
             <div className="flex py-4 space-x-2">
@@ -334,9 +290,9 @@ const Bottom = ({ featuredPost, recentPosts }) => {
                 >
                   Understanding the role of switches in networking
                 </a>
-                <p className="mt-auto text-xs  . text-gray-600">
+                <div className="mt-auto text-xs  . text-gray-600">
                   July 15, 2023
-                </p>
+                </div>
               </div>
             </div>
             <div className="flex py-4 space-x-2">
@@ -353,11 +309,56 @@ const Bottom = ({ featuredPost, recentPosts }) => {
             </div>
           </div>
         </div>{" "}
+        {/* -------------------------------------------------------------------3rd--------------------------------------------------------------------------------------- */}
+        <div className="hidden pt-10 xl:col-span-3  md:col-span-4 md:block lg:block">
+          <div className="relative flex items-center  mb-3 text-gray-600  cursor-pointer  hover:text-blue-500">
+            <div className="relative ">
+              <div className="absolute bottom-0 text-center inline-block w-36  xl:w-36 px-4 py-2   text-white font-medium bg-blue-900 rounded">
+                <span className="inline-block text-sm text-center leading-tight">
+                  Latest News
+                </span>
+                <span
+                  className="absolute bottom-0 right-0 w-3 h-3  -mb-1 transform rotate-45 bg-blue-900"
+                  style={{ left: "50%" }}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col divide-y  divide-gray-300">
+            <div className="flex py-4 space-x-2">
+              <div className="flex flex-col  flex-grow">
+                {recentPosts.map((post) => ( 
+                  <div
+                    rel="noopener noreferrer"
+                    href="https://news.networktigers.com/industry-news/maximizing-roi-on-network-equipment/"
+                    className="font-poppins text-base   hover:underline"
+                    key={post.id}
+                  >
+                    {post.title.rendered}
+
+                    <div className="mt-auto text-xs text-gray-600">
+                    
+                      {new Date(post.date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric", 
+                      })}   <div className="  pb-7  "/>
+                    </div>
+                  </div>
+                
+                ))}
+             
+              </div>
+            </div>
+        
+          </div>
+        </div>
         {/* ----------------------------------------------------------------------------4th-------------------------------------------------------------------------------------------------------------------- */}
         <div className="py-5  pb-2 xl:col-span-3 md:col-span-12 col-span-12 lg:block">
           <div>
             <div className="pt-5 pb-3">
-              <div className="relative flex items-center mb-3  text-gray-600  cursor-pointer  hover:text-blue-500">
+              <div className="relative flex items-center   text-gray-600  cursor-pointer  hover:text-blue-500">
                 <div className="relative">
                   <div className="absolute bottom-0 text-center inline-block w-40 xl:w-40 py-2 text-white font-medium bg-orange-700 rounded">
                     <span className="inline-block text-sm text-center leading-tight">
@@ -407,7 +408,6 @@ const Bottom = ({ featuredPost, recentPosts }) => {
 
 export async function getServerSideProps() {
   const featuredCategory = await getFeaturedCategory();
-  
 
   if (featuredCategory) {
     const featuredPost = await getFeaturedBlogPost(featuredCategory.id);
